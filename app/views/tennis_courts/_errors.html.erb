@@ -1,0 +1,13 @@
+<% if @tennis_court.errors.any? %>
+  <div class="errors">
+    <h3>
+      <%= pluralize(@tennis_court.errors.count, 'error') %>
+      prohibited this tennis_court from being saved:
+    </h3>
+    <ul>
+      <% @tennis_court.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -1,0 +1,22 @@
+<div class="container">
+		        	<% @users = User.all %>
+						<% @users.each do |user| %>
+							<div class="round-image-80"><%= image_tag(user.image.url(:thumb)) %></div>
+							<br />
+						  	<%= user.name %><br/>
+						  	<br />
+						  	<%= user.email %><br/>
+						  	<br />
+
+				<div class="panel-body">
+          			<div class="list-group">
+              			<div href="#" class="list-group-item">
+                		<i class="fa fa-comment fa-fw"><em><%= user.name %></em>
+              		</div>
+          		</div>
+                <div href="#" class="list-group-item">
+                    <i class="fa fa-twitter fa-fw"></i> <%= user.email %>
+          		</div>
+          		<br/>
+						<% end %>
+</div>

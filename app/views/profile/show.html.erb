@@ -1,0 +1,44 @@
+<h3> Bookings for <%= current_user.name %></h3>
+
+<hr />
+
+<% if current_user.booking %>
+
+  <% current_user.booking.each do |booking| %>
+
+<div clas="container" id="page-wrapper">
+  <div class="col-lg-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div>
+          <%= booking.user.name %>
+        </div>
+      </div>
+        <div class="panel-body">
+          <div class="list-group">
+            <div href="#" class="list-group-item">
+              <i class="fa fa-comment fa-fw"></i>Start Time
+              <div class="pull-right text-muted small"><em><%= booking.start_time.strftime('%H:%M%p') %></em>
+            </div>
+          </div>
+          <div href="#" class="list-group-item">
+            <i class="fa fa-twitter fa-fw"></i> End Time
+              <div class="pull-right text-muted small"><%= (booking.calculate_end_time + 60).strftime('%H:%M%p')%>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+        <%= link_to "Delete", profile_show_path(@booking), data: { confirm: 'Are you sure?' }, method: :delete %> -->
+
+  <% end %>
+
+<% else %>
+
+<!-- add other information for booking here also link to signin  or sign up -->
+
+<% end %>
