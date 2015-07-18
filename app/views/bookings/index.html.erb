@@ -18,7 +18,8 @@
             <div class="round-image-80"><%= image_tag(current_user.image.url(:thumb)) %>
             </div>
             <br />
-            <%= booking.user.name %>
+            <%= booking.user.name %><br />
+            <%= booking.start_time.strftime('%D') %>
             <% else %>
             <div class="round-image-80"><%= image_tag(booking.user.image.url(:thumb)) %>
             </div>
