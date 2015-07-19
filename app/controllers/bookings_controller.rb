@@ -16,10 +16,14 @@ class BookingsController < ApplicationController
   end
 
   def create
+    @user = current_user
     @booking =  current_user.booking.build(params[:booking].permit(:tennis_court_id, :start_time, :length))
     # Booking.new
     @booking.tennis_court = @tennis_court
     if @booking.save
+
+      BokingMailer.boking_created(@user).deliver
+
       redirect_to tennis_court_bookings_path(@tennis_court, method: :get)
     else
       render 'new'
