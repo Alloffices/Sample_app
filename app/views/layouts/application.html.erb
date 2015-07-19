@@ -8,6 +8,20 @@
 </head>
 <body>
 
+<% if notice %>
+
+  <div id="notice_wrapper">
+  <p class="notice"><%= notice %></p>
+  </div>
+
+<% elsif alert %>
+
+  <div id="notice_wrapper">
+    <p class="alert"><%= alert %></p>
+  </div>
+
+<% end %>
+
 <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -47,23 +61,15 @@
             <!-- /.navbar-collapse -->
         </div>
       </nav>
-<div class="notice">
-  <% if notice %>
-    <%= notice %>
-  <% end %>
-</div>
-
-<div class="alert">
-  <% if alert %>
-    <%= alert %>
-  <% end %>
-</div>
-
 <div>
 <%= yield %>
 </div>
 
 
+
+
+</body>
+</html>
 
 
 
