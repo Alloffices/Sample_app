@@ -47,12 +47,14 @@
             <!-- /.navbar-collapse -->
         </div>
       </nav>
-<!-- <div class="alert"  >
-  <%= notice %>
+<div class="container">
+  <% if notice %>
+    <%= notice %>
+  <% end %>
+  <% if alert %>
+    <%= alert %>
+  <% end %>
 </div>
-<div class="alert " role="alert">
-  <%= alert %>
-</div> -->
 <div>
 <%= yield %>
 </div>

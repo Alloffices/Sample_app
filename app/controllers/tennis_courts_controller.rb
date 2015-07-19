@@ -2,6 +2,7 @@ class TennisCourtsController < ApplicationController
 
   def index
     @tennis_courts = TennisCourt.all
+    @lead = Lead.new
   end
 
   def new
