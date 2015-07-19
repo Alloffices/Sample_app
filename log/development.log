@@ -23715,3 +23715,618 @@ Started GET "/" for ::1 at 2015-07-19 04:43:25 -0400
 Processing by TennisCourtsController#index as HTML
   Rendered tennis_courts/index.html.erb within layouts/application (2.4ms)
 Completed 200 OK in 115ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:45:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (227.1ms)
+Completed 200 OK in 856ms (Views: 771.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:46:28 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:62: syntax error, unexpected tIDENTIFIER, expecting ')'
+...oid"], placeholder: "Device"  f.select );@output_buffer.safe...
+...                               ^):
+  app/views/tennis_courts/index.html.erb:62: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (144.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (128.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (325.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:46:46 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:62: syntax error, unexpected ')', expecting =>
+...lder: "Device", f.email_field );@output_buffer.safe_append='
+...                               ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:65: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:87: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:91: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/tennis_courts/index.html.erb:62: syntax error, unexpected ')', expecting =>
+  app/views/tennis_courts/index.html.erb:65: syntax error, unexpected keyword_end, expecting ')'
+  app/views/tennis_courts/index.html.erb:87: syntax error, unexpected keyword_end, expecting ')'
+  app/views/tennis_courts/index.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/tennis_courts/index.html.erb:91: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (152.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (137.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (305.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:47:42 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 123ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:48:07 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:48:29 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 120ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:52:09 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 296ms (Views: 294.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:55:53 -0400
+Processing by TennisCourtsController#index as HTML
+  [1m[35mTennisCourt Load (0.3ms)[0m  SELECT "tennis_courts".* FROM "tennis_courts"
+  Rendered tennis_courts/index.html.erb within layouts/application (30.7ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007fa7be111620>):
+    47:     <h1>Thanks for signin up!</h1>
+    48:   % else %> -->
+    49:   <%= form_for @lead do |f| %>
+    50:     <%= f.input :name, placeholder: "Name" %>
+    51:     <%= f.email_field :email, placeholder: "Email" %>
+    52:     <%= f.select :devise, ["iPhone", "Android"], prompt: "Choose Your Device" %>
+    53:     <%= f.text_field :social_media, placeholder: "soundcloud.com/example" %>
+  app/views/tennis_courts/index.html.erb:50:in `block in _app_views_tennis_courts_index_html_erb___821441153319480726_70179212675500'
+  app/views/tennis_courts/index.html.erb:49:in `_app_views_tennis_courts_index_html_erb___821441153319480726_70179212675500'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (151.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (123.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (407.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:56:09 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 168ms (Views: 167.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:56:40 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 119ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:59:34 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (147.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (276.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:59:48 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (151.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (132.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (289.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 04:59:58 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (143.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (123.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (271.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:00:11 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (141.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (299.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:00:36 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (144.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (117.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (269.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:01:12 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (115.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (265.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:01:23 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (141.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (116.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (263.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:01:33 -0400
+Processing by TennisCourtsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (130.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (288.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:01:42 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 152ms (Views: 132.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:02:14 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.1ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:97: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:99: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/tennis_courts/index.html.erb:97: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/tennis_courts/index.html.erb:99: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (142.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (122.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (275.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:02:26 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:04:06 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 122ms (Views: 121.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:04:22 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:04:24 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 125ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:04:41 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:05:15 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 141ms (Views: 139.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:07:17 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:08:56 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:66: syntax error, unexpected tLABEL
+...: "dropdownMenu1", data-toggle: "dropdown", aria-haspopup: "...
+...                               ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:66: syntax error, unexpected ',', expecting ')'
+...enu1", data-toggle: "dropdown", aria-haspopup: "true" aria-e...
+...                               ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:66: syntax error, unexpected tIDENTIFIER, expecting ')'
+...wn", aria-haspopup: "true" aria-expanded: "true" );@output_b...
+...                               ^):
+  app/views/tennis_courts/index.html.erb:66: syntax error, unexpected tLABEL
+  app/views/tennis_courts/index.html.erb:66: syntax error, unexpected ',', expecting ')'
+  app/views/tennis_courts/index.html.erb:66: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (140.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (130.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (288.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:09:24 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:66: syntax error, unexpected tLABEL
+...: "dropdownMenu1", data-toggle: "dropdown", aria-haspopup: "...
+...                               ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:66: syntax error, unexpected ',', expecting ')'
+...enu1", data-toggle: "dropdown", aria-haspopup: "true", aria-...
+...                               ^
+/Users/mannyquintanilla/Documents/tennis/app/views/tennis_courts/index.html.erb:66: syntax error, unexpected ',', expecting ')'
+...opdown", aria-haspopup: "true", aria-expanded: "true" );@out...
+...                               ^):
+  app/views/tennis_courts/index.html.erb:66: syntax error, unexpected tLABEL
+  app/views/tennis_courts/index.html.erb:66: syntax error, unexpected ',', expecting ')'
+  app/views/tennis_courts/index.html.erb:66: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (154.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (121.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (275.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:10:05 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:12:07 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mannyquintanilla/Documents/tennis/app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  <%= form_for @lead do |f| %>
+   ^):
+  app/models/lead.rb:7: syntax error, unexpected '<', expecting end-of-input
+  app/controllers/tennis_courts_controller.rb:5:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (135.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (119.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (264.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&authenticity_token=HWBaBXclgD2ib6DR6S%2FQ%2BQj5DDkl%2B9bZioP3bcMC04uJLM7UvinO92dxO1rF%2BnEGmeRnaijP1ButHEzLF%2Bl9NA%3D%3D&lead%5Bname%5D=&lead%5Bemail%5D=&commit=devise&lead%5Bname%5D=" for ::1 at 2015-07-19 05:12:14 -0400
+Processing by TennisCourtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWBaBXclgD2ib6DR6S/Q+Qj5DDkl+9bZioP3bcMC04uJLM7UvinO92dxO1rF+nEGmeRnaijP1ButHEzLF+l9NA==", "lead"=>{"name"=>"", "email"=>""}, "commit"=>"devise"}
+  Rendered tennis_courts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 481ms (Views: 427.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:12:47 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 175ms (Views: 173.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:13:33 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 160ms (Views: 156.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:14:05 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:14:50 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:15:01 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:15:27 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 123ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:15:53 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 129ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:16:18 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 139ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:16:55 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:16:58 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uc13gTK7yNpWPa6uxoUvN6wgmiVd+BWakBg8Y8Wys1stgeNQ+7eGEJMjNSXqUI7IPT3xdlDMF1i3h4fFEVkd5A==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:16:58 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 134ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:17:32 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 136ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:17:56 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 136ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:18:11 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 131ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:18:25 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 144ms (Views: 142.9ms | ActiveRecord: 0.0ms)

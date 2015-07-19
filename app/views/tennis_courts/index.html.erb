@@ -22,16 +22,6 @@
               <div class="col-sm-8 col-sm-offset-2 text-center">
                 <img src="http://placehold.it/150x45/ffffff/000000" class="img-responsive" alt=""><br>
                 <h1 class="light wow fadeInDown">Your app has never been cooler</h1>
-                <form class="form-inline">
-                  <div class="form-group">
-                    <label for="exampleInputEmail2"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                  </div>
-                  <br>
-                  <br>
-                  <button type="submit" class="btn btn-primary btn-lg">Send invitation</button>
-                </form>
-                <br>
                 <br>
               </div>
             </div>
@@ -56,14 +46,27 @@
 <!--   %if cookies[:saved_lead] %>
     <h1>Thanks for signin up!</h1>
   % else %> -->
-  <%= form_for @lead do |f| %>
-    <%= f.text_field :name, placeholder: "Name" %>
-    <%= f.email_field :email, placeholder: "Email" %>
-    <%= f.text_field :devise, placeholder: "Device" %>
-    <%= f.text_field :social_media, placeholder: "soundcloud.com/example" %>
-    <%= f.submit %>
-  <% end %>
-<!-- % end %> -->
+
+
+<%= form_for @lead do |f| %>
+  <form>
+    <div class="form-group jumbotron">
+
+  <%= f.select :devise, ["iPhone", "Android"], prompt: "Choose Your Device"  %>
+   </div>
+   <div class="form-group">
+      <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.email_field :email, type: 'email', placeholder: 'Email', class: 'form-control'  %>
+    </div>
+    <div class="form-group">
+      <%= f.text_field :social_media, type: 'social_media',placeholder: 'soundcloud.com/example', class: 'form-control' %>
+    </div>
+    <hr />
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  </form>
+<% end %>
           </div>
           <div class="col-sm-12">
             <div class="footer-links">
