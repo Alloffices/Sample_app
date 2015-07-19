@@ -24330,3 +24330,418 @@ Started GET "/" for ::1 at 2015-07-19 05:18:25 -0400
 Processing by TennisCourtsController#index as HTML
   Rendered tennis_courts/index.html.erb within layouts/application (5.3ms)
 Completed 200 OK in 144ms (Views: 142.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for ::1 at 2015-07-19 05:22:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::ActionNotFound (The action 'index' could not be found for LeadsController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (304.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:22:12 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (96.4ms)
+Completed 200 OK in 1502ms (Views: 1382.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:22:24 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uClSo2uuZ588Lsyt1uTldFG9io/GfZXnGlUMPZVxENAsZcZyoqIpVfkwVyb6MUSLwKDh3MtJlyU9yrebQZq+bw==", "lead"=>{"devise"=>"Android", "name"=>"amdlaksd", "email"=>"aystarz.sales@gmail.com", "social_media"=>"kjasndkjasnd.com"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "amdlaksd"], ["email", "aystarz.sales@gmail.com"], ["devise", "Android"], ["social_media", "kjasndkjasnd.com"], ["created_at", "2015-07-19 09:22:24.200843"], ["updated_at", "2015-07-19 09:22:24.200843"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.6ms)
+
+NameError (uninitialized constant LeadsController::LeadMailer):
+  app/controllers/leads_controller.rb:7:in `create'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (139.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (307.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:22:42 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 225ms (Views: 194.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:23:02 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+xE4XxAoBD/K2qe5O6yDWQhAh1V3ThIwY6kZZbrEkZroNAwtUzu2jo18RXIOxPy9TxpTljpOormER/DQgC8+Q==", "lead"=>{"devise"=>"Android", "name"=>"asdasd", "email"=>"aystarz.sales@gmail.com", "social_media"=>"aksdjnas.com"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "asdasd"], ["email", "aystarz.sales@gmail.com"], ["devise", "Android"], ["social_media", "aksdjnas.com"], ["created_at", "2015-07-19 09:23:02.784436"], ["updated_at", "2015-07-19 09:23:02.784436"]]
+  [1m[36m (29.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 29.7ms)
+
+NoMethodError (undefined method `signup_confirmation' for AdminMailer:Class):
+  app/controllers/leads_controller.rb:7:in `create'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (126.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (280.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:26:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 636ms (Views: 561.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:26:37 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2EIKPi4yUt5p221oWETavM63loJTnJxMPWGTqlpIIztMDp7v5z4cFKzF9uN0kXtDX6r90V6ono4a/igMjqONhA==", "lead"=>{"devise"=>"iPhone", "name"=>"asdasdas", "email"=>"asdasd@gmail.com", "social_media"=>"sadasd"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "asdasdas"], ["email", "asdasd@gmail.com"], ["devise", "iPhone"], ["social_media", "sadasd"], ["created_at", "2015-07-19 09:26:37.629661"], ["updated_at", "2015-07-19 09:26:37.629661"]]
+  [1m[35m (25.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 26.5ms)
+
+NoMethodError (undefined method `signup_confirmation' for AdminMailer:Class):
+  app/controllers/leads_controller.rb:7:in `create'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (158.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (394.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:26:48 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 134ms (Views: 117.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:26:58 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JbWeSVtcoBvDHT6fPHgaGVCWRhU1RTzCzJBYfcyAX4Cx+QqYklDu0QYDpRQQrbvmwYstRjhxPgDrD+PbGGvxPw==", "lead"=>{"devise"=>"Android", "name"=>"asdasdasd", "email"=>"asdasd@gmail.com", "social_media"=>"sfsdfsdf"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "asdasdasd"], ["email", "asdasd@gmail.com"], ["devise", "Android"], ["social_media", "sfsdfsdf"], ["created_at", "2015-07-19 09:26:58.165313"], ["updated_at", "2015-07-19 09:26:58.165313"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+
+LeadMailer#signup_confirmation: processed outbound mail in 200.8ms
+Completed 500 Internal Server Error in 328ms (ActiveRecord: 4.1ms)
+
+ActionView::MissingTemplate (Missing template lead_mailer/signup_confirmation with "mailer". Searched in:
+  * "lead_mailer"
+):
+  app/mailers/lead_mailer.rb:11:in `signup_confirmation'
+  app/controllers/leads_controller.rb:7:in `create'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (143.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (296.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:30:18 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:30:28 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q6RPy2CVSl/u8aEvRxMLabFfDIrmnoGYHYAfCrkaSRvX6NsaqZkElSvvOqRrxqqWIEJn2euqg1o6H6SsbfHnpA==", "lead"=>{"devise"=>"iPhone", "name"=>"asdasdasd", "email"=>"asdasd@gmail.com", "social_media"=>"sadasdas"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "asdasdasd"], ["email", "asdasd@gmail.com"], ["devise", "iPhone"], ["social_media", "sadasdas"], ["created_at", "2015-07-19 09:30:28.267351"], ["updated_at", "2015-07-19 09:30:28.267351"]]
+  [1m[35m (24.9ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (2.9ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.8ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 403.9ms
+
+Sent mail to alloffices.nyc@gmail.com (2290.6ms)
+Date: Sun, 19 Jul 2015 05:30:28 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab6e34ad740_a7e33fd3642012d88273d@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab6e34aa19e_a7e33fd3642012d88263e";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab6e34aa19e_a7e33fd3642012d88263e
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+LeadMailer#signup_confirmation
+
+asdasd@gmail.com
+asdasdasd, find me in app/views/lead_mailer/signup_confirmation.text.erb
+
+----==_mimepart_55ab6e34aa19e_a7e33fd3642012d88263e
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Request</h1>
+
+<p>
+  <h3>Email: asdasd@gmail.com</h3><br />
+  <h3>Social Media link: asdasdasd</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab6e34aa19e_a7e33fd3642012d88263e--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2729ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:30:31 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:32:19 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 113ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:32:31 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mhUMHmvCE8X9SlCQs14a5cpQ2uKdphyAX8sb65tNyliJMDhsKNGhdLrssluGNmUBjQoOIdCmrAm4JfJeoaZlg==", "lead"=>{"devise"=>"Android", "name"=>"adasd", "email"=>"asdas@gmail.com", "social_media"=>"ajdnkajn"}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "adasd"], ["email", "asdas@gmail.com"], ["devise", "Android"], ["social_media", "ajdnkajn"], ["created_at", "2015-07-19 09:32:32.007406"], ["updated_at", "2015-07-19 09:32:32.007406"]]
+  [1m[36m (38.5ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (0.7ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.6ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 38.0ms
+
+Sent mail to alloffices.nyc@gmail.com (1722.6ms)
+Date: Sun, 19 Jul 2015 05:32:32 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab6eb0173e4_a7e33fd3663e91488295e@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab6eb0148f5_a7e33fd3663e914882890";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab6eb0148f5_a7e33fd3663e914882890
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+LeadMailer#signup_confirmation
+
+asdas@gmail.com
+adasd, find me in app/views/lead_mailer/signup_confirmation.text.erb
+
+----==_mimepart_55ab6eb0148f5_a7e33fd3663e914882890
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Invite Request</h1>
+
+<p>
+  <h3>Device: Android</h3><br />
+  <h3>Name: adasd</h3><br />
+  <h3>Email: asdas@gmail.com</h3><br />
+  <h3>Social Media link: ajdnkajn</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab6eb0148f5_a7e33fd3663e914882890--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1812ms (ActiveRecord: 39.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:32:33 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 137ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 05:33:11 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qYOLokSQuva2j5rtv7jypBTwWs+cp9rEBW+yzuM1nQ09zx9zjZz0PHORAWaTbVNbhe0xnJGT2AYi8AloN94zsg==", "lead"=>{"devise"=>"Android", "name"=>"sdfsdfsdf", "email"=>"sdfsdf@gmail.com", "social_media"=>"esfsdfsdf"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sdfsdfsdf"], ["email", "sdfsdf@gmail.com"], ["devise", "Android"], ["social_media", "esfsdfsdf"], ["created_at", "2015-07-19 09:33:11.030825"], ["updated_at", "2015-07-19 09:33:11.030825"]]
+  [1m[35m (16.0ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (0.9ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.6ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 84.2ms
+
+Sent mail to alloffices.nyc@gmail.com (1696.6ms)
+Date: Sun, 19 Jul 2015 05:33:11 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab6ed721ae5_a7e33fd3667f56108315c@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab6ed71c381_a7e33fd3667f5610830d6";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab6ed71c381_a7e33fd3667f5610830d6
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+LeadMailer#signup_confirmation
+
+sdfsdf@gmail.com
+sdfsdfsdf, find me in app/views/lead_mailer/signup_confirmation.text.erb
+
+----==_mimepart_55ab6ed71c381_a7e33fd3667f5610830d6
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Invite Request</h1>
+
+<p>
+  <h3>Device: Android</h3>
+  <h3>Name: sdfsdfsdf</h3>
+  <h3>Email: sdfsdf@gmail.com</h3>
+  <h3>Social Media link: esfsdfsdf</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab6ed71c381_a7e33fd3667f5610830d6--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1806ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 05:33:12 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 175ms (Views: 173.7ms | ActiveRecord: 0.0ms)

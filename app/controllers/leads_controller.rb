@@ -4,6 +4,7 @@ class LeadsController < ApplicationController
 		@lead = Lead.new lead_params
 		if @lead.save
 			# cookies[:saved_lead] = true
+			LeadMailer.signup_confirmation(@lead).deliver
 			redirect_to root_path, notice: "Saved Successfully!"
 		else
 			redirect_to root_path, alert: "Failed to save"
