@@ -25471,3 +25471,830 @@ Started GET "/" for ::1 at 2015-07-19 06:12:11 -0400
 Processing by TennisCourtsController#index as HTML
   Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 119ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:19:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (78.7ms)
+Completed 200 OK in 4047ms (Views: 3971.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-a3fee96f2b056533703755ade856bb1a503ae551360479ad558d162a53d0289f.css?body=1" for ::1 at 2015-07-19 06:19:27 -0400
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:19:37 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MBbwnvgESWVnScTq4xUxGgj/o6ZeZs4O7j6MeutQno2kWmRPMQgHr6JXX2HPwJDlmeLI9VNSzMzJoTfcP7swMg==", "lead"=>{"devise"=>"Android", "name"=>"adsasd", "email"=>"asdads@sgslk", "social_media"=>"adas"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (36.1ms)[0m  [1mINSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "adsasd"], ["email", "asdads@sgslk"], ["devise", "Android"], ["social_media", "adas"], ["created_at", "2015-07-19 10:19:37.798993"], ["updated_at", "2015-07-19 10:19:37.798993"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (1.1ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.7ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 702.4ms
+
+Sent mail to alloffices.nyc@gmail.com (1713.8ms)
+Date: Sun, 19 Jul 2015 06:19:38 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab79baa7266_b1f03ffce6480abc7561c@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab79baa133b_b1f03ffce6480abc755ca";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab79baa133b_b1f03ffce6480abc755ca
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+New Invite Request
+
+Device: Android
+Name: adsasd
+Email: asdads@sgslk
+Social Media link: adas
+
+----==_mimepart_55ab79baa133b_b1f03ffce6480abc755ca
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Invite Request</h1>
+
+<p>
+  <h3>Device: Android</h3>
+  <h3>Name: adsasd</h3>
+  <h3>Email: asdads@sgslk</h3>
+  <h3>Social Media link: adas</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab79baa133b_b1f03ffce6480abc755ca--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2585ms (ActiveRecord: 37.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:19:40 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 246ms (Views: 244.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:20:22 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 283ms (Views: 282.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:20:29 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rIZYU6lyuktOa0YHj0hF5ScO/cE98Mol6qvG0Mkq7n04ysyCYH70gYt13YyjneQathOWkjDEyOfNNH12HcFAwg==", "lead"=>{"devise"=>"iPhone", "name"=>"wefwe", "email"=>"alloffices.nyc@gmail.com", "social_media"=>"ads"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "wefwe"], ["email", "alloffices.nyc@gmail.com"], ["devise", "iPhone"], ["social_media", "ads"], ["created_at", "2015-07-19 10:20:29.959735"], ["updated_at", "2015-07-19 10:20:29.959735"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (0.2ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 54.3ms
+
+Sent mail to alloffices.nyc@gmail.com (1672.1ms)
+Date: Sun, 19 Jul 2015 06:20:30 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab79ee635c_b1f03ffce8c70ab87584e@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab79ee40c8_b1f03ffce8c70ab875726";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab79ee40c8_b1f03ffce8c70ab875726
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+New Invite Request
+
+Device: iPhone
+Name: wefwe
+Email: alloffices.nyc@gmail.com
+Social Media link: ads
+
+----==_mimepart_55ab79ee40c8_b1f03ffce8c70ab875726
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Invite Request</h1>
+
+<p>
+  <h3>Device: iPhone</h3>
+  <h3>Name: wefwe</h3>
+  <h3>Email: alloffices.nyc@gmail.com</h3>
+  <h3>Social Media link: ads</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab79ee40c8_b1f03ffce8c70ab875726--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1745ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:20:31 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:22:23 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 321ms (Views: 320.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:22:30 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yoU/CkvSo7zaxmZ7qZJOvNcHDTyO1R+0W7HiRp7jXX9eyavbgt7tdh/Y/fCFR+9DRhpmb4PhHXZ8LlngSgjzwA==", "lead"=>{"devise"=>"Android", "name"=>"asdasdasd", "email"=>"asdads@sgslk", "social_media"=>"asd"}}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (12.3ms)[0m  [1mINSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "asdasdasd"], ["email", "asdads@sgslk"], ["devise", "Android"], ["social_media", "asd"], ["created_at", "2015-07-19 10:22:30.945822"], ["updated_at", "2015-07-19 10:22:30.945822"]]
+  [1m[35m (50.0ms)[0m  commit transaction
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (0.1ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.1ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 269.7ms
+
+Sent mail to alloffices.nyc@gmail.com (2124.1ms)
+Date: Sun, 19 Jul 2015 06:22:31 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab7a6745988_b1f03ffce9177a487605f@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab7a6743865_b1f03ffce9177a4875987";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab7a6743865_b1f03ffce9177a4875987
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+New Invite Request
+
+Device: Android
+Name: asdasdasd
+Email: asdads@sgslk
+Social Media link: asd
+
+----==_mimepart_55ab7a6743865_b1f03ffce9177a4875987
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Invite Request</h1>
+
+<p>
+  <h3>Device: Android</h3>
+  <h3>Name: asdasdasd</h3>
+  <h3>Email: asdads@sgslk</h3>
+  <h3>Social Media link: asd</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab7a6743865_b1f03ffce9177a4875987--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2465ms (ActiveRecord: 62.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:22:33 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1153ms (Views: 1152.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:25:18 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 419ms (Views: 416.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:25:25 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gRxbMq7CLKDDgH5cOoQug19FS0OBER+ToyMw6736iQQVUM/jZ85iagae5dcWUY98zlggEIwlHVGEvItNaREnuw==", "lead"=>{"devise"=>"iPhone", "name"=>"sdfsd", "email"=>"sdfsdfsdfdsf@gmail.com", "social_media"=>"sdf"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "leads" ("name", "email", "devise", "social_media", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "sdfsd"], ["email", "sdfsdfsdfdsf@gmail.com"], ["devise", "iPhone"], ["social_media", "sdf"], ["created_at", "2015-07-19 10:25:25.979417"], ["updated_at", "2015-07-19 10:25:25.979417"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from create at /Users/mannyquintanilla/Documents/tennis/app/controllers/leads_controller.rb:7)
+  Rendered lead_mailer/signup_confirmation.html.erb within layouts/mailer (0.1ms)
+  Rendered lead_mailer/signup_confirmation.text.erb within layouts/mailer (0.1ms)
+
+LeadMailer#signup_confirmation: processed outbound mail in 144.4ms
+
+Sent mail to alloffices.nyc@gmail.com (2044.7ms)
+Date: Sun, 19 Jul 2015 06:25:26 -0400
+From: from@example.com
+To: alloffices.nyc@gmail.com
+Message-ID: <55ab7b16218fc_b1f03ffce8932c5c762a@Don.local.mail>
+Subject: Signup confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55ab7b161f262_b1f03ffce8932c5c76113";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55ab7b161f262_b1f03ffce8932c5c76113
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+New Invite Request
+
+Device: iPhone
+Name: sdfsd
+Email: sdfsdfsdfdsf@gmail.com
+Social Media link: sdf
+
+----==_mimepart_55ab7b161f262_b1f03ffce8932c5c76113
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>New Invite Request</h1>
+
+<p>
+  <h3>Device: iPhone</h3>
+  <h3>Name: sdfsd</h3>
+  <h3>Email: sdfsdfsdfdsf@gmail.com</h3>
+  <h3>Social Media link: sdf</h3>
+</p>
+  </body>
+</html>
+
+----==_mimepart_55ab7b161f262_b1f03ffce8932c5c76113--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2203ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:25:28 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 123ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:50:52 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 405ms (Views: 404.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:50:56 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7c6oBKogXAPdEhS1/qwzMikglado5zC7kft/gr2Pofb+65x26TPuspq09n7LxEzWbnpBZCXngDJ2FZY3h2QOA==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (1.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:50:56 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:52:06 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 398ms (Views: 396.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:52:09 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IFArPheKaZXXbIcwJSKS727NLBNa7+5FiS42OtnnEM+0HL/v3oYnXxJyHLsJ9zMQ/9BHQFfb7IeusY2cDQy+cA==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:52:09 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:52:29 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:52:31 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u66wj8kvxEImeB1dFrZgP6E4QiTHx7bCwGFS27x9oh0v4iReACOKiONmhtY6Y8HAMCUpd8rztADn/ul9aJYMog==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:52:31 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 104ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:53:38 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 128ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:53:40 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QDg2ww/t+U7KTEgEhhY6Xv4hmtN+zQ7dsn/yLkcbS1DUdKISxuG3hA9S04+qw5uhbzzxgHP5DB+V4EmIk/Dl7w==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:53:40 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:55:28 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 160ms (Views: 158.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 06:55:31 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vdAZmQ1YF+kTReEkfmshWhUEmeQO7cc6a1573yPGc2QpnI1IxFRZI9Zbeq9SvoClhBnytwPZxfhMwcB59y3d2w==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 06:55:31 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 338ms (Views: 337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:01:07 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 450ms (Views: 449.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:01:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (366.4ms)
+Completed 200 OK in 1709ms (Views: 1608.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:01:34 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ib4eqvpm6ZenKwoAYPYVzmtVNuCpssAeyRitDM8mrka18op7M2qnXWI1kYtMI7Qx+khds6SGwtzuhxaqG80A+Q==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 273ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:01:34 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 189ms (Views: 187.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:02:53 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 373ms (Views: 371.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0efe7e037bdc23a3d911d53bf71a16fdb49db335f861d9353f7e5a49ba0dfd5d.js?body=1" for ::1 at 2015-07-19 07:02:54 -0400
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:02:55 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pO1opmKrsuaDTNAgZ8MBLtlvYX52jBngoYS4LVjSPxIwofx3q6f8LEZSS6tLFqDRSHIKLXu4GyKGGwOLjDmRrQ==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:02:55 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 118ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:03:50 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 674ms (Views: 671.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheet.css" for ::1 at 2015-07-19 07:03:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/stylesheet.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (313.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (142.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (328.3ms)
+
+
+Started GET "/assets/jquery.self-686b4af20ca7b17419a9a436add0484c057d61d01af3c1269371ce75981a3dd5.js?body=1" for ::1 at 2015-07-19 07:03:52 -0400
+
+
+Started GET "/script.js" for ::1 at 2015-07-19 07:03:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/script.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (213.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (123.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (270.5ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:03:54 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bUT4IaMEXHw89Qi/dTjXsTNkDNhBRkyRMWgpirEjiP/5CGzwaggStvnrkzRZ7XZOonlni0xyTlMW95IsZcgmQA==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:03:54 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 115ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/script.js" for ::1 at 2015-07-19 07:03:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/script.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (120.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (285.0ms)
+
+
+Started GET "/stylesheet.css" for ::1 at 2015-07-19 07:03:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/stylesheet.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (225.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (119.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (272.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:04:54 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:07:10 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 169ms (Views: 138.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:07:12 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YvIshbHKdzL1GZmNpLVBj6h/MEgMmt93BrQirybjwP/2vrhUeMY5+DAHAgaIYOBwOWJbGwGu3bUhK5kJ8ghuQA==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:07:12 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 142ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:08:56 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2277ms (Views: 2276.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-974d92d10b325a5ba357481e87bb8f3ea7ea581e98028469974f5a9b4821278c.css?body=1" for ::1 at 2015-07-19 07:08:59 -0400
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:09:01 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q/9k7mstr9kSQFNCLWAFBkrt6Wi6K1LJWrysPs1fpeE/s/A/oiHhE9deyMkBtaT52/CCO7cfUAt9IxeYGbQLXg==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:09:01 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 132ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:13:05 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4600ms (Views: 4599.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3d10f2020f20e00ce3363d9ac806df30a5ad8dec2c250658891d4db07bd6ccb3.css?body=1" for ::1 at 2015-07-19 07:13:10 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 07:13:38 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:13:40 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QQNeAYTj31v3N6hMPX2gISSjDsuDHKY02byVeGSKTLzVT8rQTe+RkTIpM8cRqAHetb5lmI4opPb+Iy7esGHiAw==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:13:40 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 131ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:15:20 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 2255ms (Views: 2254.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-54541b5602ab78c03833c2611add7a1f84353394adf33013363aa647aa7076d0.css?body=1" for ::1 at 2015-07-19 07:15:22 -0400
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:15:24 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sq50hKDAQ0z9LIv/1lbnvmxAfOQ73M8+nvZJKpGVrATe4uBVacwNhjgyEHT6g0ZB/V0Xtzbozfy5afKMRX4Cuw==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:15:24 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 166ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:17:14 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1961ms (Views: 1960.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-68fd91384514f93b2541e35b79d143ec8c993133e5c9407af41443ea1d91f74a.css?body=1" for ::1 at 2015-07-19 07:17:16 -0400
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:17:18 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JnZZ2HuJcWgJHB5xtgfmnWJbp7QyKWVkwA+PlZeMeXKyOs0JsoU/oswChfqa0kdi80bM5z8dZ6bnkDQzQ2fXzQ==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:17:18 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 145ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:17:45 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1866ms (Views: 1865.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-71676bf443af206e2e9152bd97606a78d38cfc2701d58e68713da6d8405238e6.css?body=1" for ::1 at 2015-07-19 07:17:47 -0400
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:17:49 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cERG3UXWZjtWSbxp4YBskwtQCMVKd/LENPuDAs5ebJPkCNIMjNoo8ZNXJ+LNVc1smk1jlkdD8AYTZDikGrXCLA==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:17:49 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 158ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:18:23 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 200ms (Views: 198.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2015-07-19 07:18:25 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rAKJXHF7OmC2GI58pJcPqlR8u9ufyWF59ORPQe+hdMo4Th2NuHd0qnMGFfeIQq5VxWHQiJL9Y7vTe/TnO0radQ==", "lead"=>{"devise"=>"", "name"=>"", "email"=>"", "social_media"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:18:25 -0400
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.0ms)

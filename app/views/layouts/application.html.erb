@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tennis</title>
+
+  <title>Nobbble.com</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
@@ -65,8 +68,15 @@
 <%= yield %>
 </div>
 
-
-
+<!--   // script
+  //   $(document).ready(function(){
+  //     setTimeout(function(){
+  //       $("#notice_wrapper").fadeOut("slow", function() {
+  //         $(this).remove();
+  //       })
+  //     }, 4500);
+  //   });
+  // /script -->
 
 </body>
 </html>

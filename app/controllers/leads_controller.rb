@@ -5,9 +5,9 @@ class LeadsController < ApplicationController
 		if @lead.save
 			# cookies[:saved_lead] = true
 			LeadMailer.signup_confirmation(@lead).deliver
-			redirect_to root_path, notice: "Saved Successfully!"
+			redirect_to root_path, notice: "Thanks! You're on the waiting list."
 		else
-			redirect_to root_path, alert: "Failed to save"
+			redirect_to root_path, alert: "Failed to request invitation"
 		end
 
 	end
