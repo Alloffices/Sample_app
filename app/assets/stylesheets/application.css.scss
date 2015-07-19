@@ -10,9 +10,9 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- //= require_tree
- //= require_self
- */
+//= require_tree
+//= require_self
+*/
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
@@ -221,7 +221,7 @@ hr {
 /* Set the height of hero/intro, set image background */
 
 .hero {
-    background-image: url("http://placehold.it/1600x900/ffffff/000000");
+    background-image: url(/assets/header2.jpg);
     background-attachment: fixed;
     background-position: center;
     -webkit-background-size: cover;
@@ -550,3 +550,11 @@ hr {
 
     }
 }
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+
+

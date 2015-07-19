@@ -2,6 +2,7 @@ class TennisCourtsController < ApplicationController
 
   def index
     @tennis_courts = TennisCourt.all
+    @lead = Lead.new
   end
 
   def new
@@ -12,6 +13,7 @@ class TennisCourtsController < ApplicationController
     @tennis_court = TennisCourt.create(tennis_court_params)
     if @tennis_court.save
       name = @tennis_court.name
+      #redirects you to the index tennis court path
       redirect_to tennis_courts_path
       flash[:notice] = "#{name} created"
     else
@@ -27,6 +29,7 @@ class TennisCourtsController < ApplicationController
   end
 
   def edit
+    #finds in database using id example: TennisCourt.find(params[:id])
     @tennis_court = TennisCourt.find(params[:id])
   end
 
@@ -40,7 +43,8 @@ class TennisCourtsController < ApplicationController
       render 'edit'
     end
   end
-
+  
+  #set save method so that it only accepts these methods
   private
 
     def tennis_court_params
