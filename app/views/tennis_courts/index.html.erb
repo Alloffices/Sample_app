@@ -53,14 +53,17 @@
           <div class="col-sm-12 divide-sm">
             <img src="http://placehold.it/150x45/edf2f5/000000" class="img-responsive" alt="">
 <hr />
-            <%= form_for @lead do |f| %>
-              <%= f.text_field :name, placeholder: "Name" %>
-              <%= f.email_field :email, placeholder: "Email" %>
-              <%= f.text_field :devise, placeholder: "Device" %>
-              <%= f.text_field :social_media, placeholder: "soundcloud.com/example" %>
-              <%= f.submit %>
-            <% end %>
-
+<!--   %if cookies[:saved_lead] %>
+    <h1>Thanks for signin up!</h1>
+  % else %> -->
+  <%= form_for @lead do |f| %>
+    <%= f.text_field :name, placeholder: "Name" %>
+    <%= f.email_field :email, placeholder: "Email" %>
+    <%= f.text_field :devise, placeholder: "Device" %>
+    <%= f.text_field :social_media, placeholder: "soundcloud.com/example" %>
+    <%= f.submit %>
+  <% end %>
+<!-- % end %> -->
           </div>
           <div class="col-sm-12">
             <div class="footer-links">
