@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   devise_for :users, :path_prefix => 'd'
   resources :users, :only =>[:show]
   resources :leads
+  
   resources :tennis_courts do
   resources :profile
   resources :bookings
