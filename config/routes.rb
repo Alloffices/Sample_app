@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   devise_for :admins
 
+
   get 'profile/index'
 
   get 'profile/show'

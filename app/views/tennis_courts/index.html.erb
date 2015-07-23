@@ -1,13 +1,14 @@
 <% if user_signed_in? || admin_signed_in? %>
-
+<br />
 	<% @tennis_courts.each do |tennis_court| %>
+  <div class="container">
 	  <div class="tennis_court">
-	    <%= tennis_court.name %>
-	    <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court) %>
+      <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block" %>
   <!-- link_to "Delete", tennis_court_path(tennis_court), data: { confirm: 'Are you sure?' }, method: :delete %>
  link_to "Edit", edit_tennis_court_path(tennis_court) %> -->
-	    <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success" %>
+      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default btn-block"  %>
 	  </div>
+  </div>
 	<% end %>
 	<!-- this a back linkt to the All tennis courts list -->
 <!-- link_to "New Space Booking", new_tennis_court_path %> -->
@@ -19,8 +20,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2 text-center">
-                <img src="/images/logo.png" class="img-responsive" alt=""><br>
-                <h1 class="light wow fadeInDown">Your app has never been cooler</h1>
+                <h1 class="light wow fadeInDown">Bookings</h1>
                 <br>
               </div>
             </div>
