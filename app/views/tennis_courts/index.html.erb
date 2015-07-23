@@ -1,4 +1,10 @@
+
+
+
 <% if user_signed_in? || admin_signed_in? %>
+<br />
+      <%= link_to "Add booking", new_tennis_court_path, class: "btn btn-success btn-block" %>
+
 <br />
 	<% @tennis_courts.each do |tennis_court| %>
   <div class="container">
