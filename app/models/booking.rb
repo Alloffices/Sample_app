@@ -6,18 +6,19 @@ class Booking < ActiveRecord::Base
 
   	belongs_to :user
 
-  	validate :user_quota, :on => :create
+ 	validate :user_quota, :on => :create
 
-	def user_quota
+
+  	def user_quota
 
 		if user.bookings.today.count >= 2
-	     errors.add(:base, "Exceeds daily limit")
-
+		errors.add(:base, "Exceeds daily limit")
+	
 		elsif user.bookings.this_week.count >= 5
-	     errors.add(:base, "Exceeds weekly limit")
+		errors.add(:base, "Exceeds weekly limit")
 
 		end
-	end
+  	end
 
 
 end

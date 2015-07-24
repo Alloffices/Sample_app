@@ -11,12 +11,12 @@ class BookingsController < ApplicationController
   end
 
   def new
-    @booking = current_user.booking.build
+    @booking = current_user.bookings.build
     # Booking.new(tennis_court_id: @tennis_court.id)
   end
 
   def create
-    @booking =  current_user.booking.build(params[:booking].permit(:tennis_court_id, :start_time, :length))
+    @booking =  current_user.bookings.build(params[:booking].permit(:tennis_court_id, :start_time, :length))
     # Booking.new
     @booking.tennis_court = @tennis_court
     if @booking.save
