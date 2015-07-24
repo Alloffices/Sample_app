@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Want to style up the Calendar
 
-Things you may want to cover:
+You may have to create a new booking space / by clicking on the orange button / enter a name / then creating a new booking
 
-* Ruby version
+The calendar needs some styling for mobile and descktop viewing. 
 
-* System dependencies
+Example: https://youcanbook.me/demos/
 
-* Configuration
+Feel free to email me about any questions.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
