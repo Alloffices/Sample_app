@@ -17,65 +17,7 @@
 	<!-- this a back linkt to the All tennis courts list -->
 <!-- link_to "New Space Booking", new_tennis_court_path %> -->
 <% else %>
-
- <section class="hero" data-start="background-position: 50% -70px;" data-100p="background-position: 50% 0px;">
-      <div class="section-overlay">
-        <div class="float-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2 text-center">
-                <h1 class="light wow fadeInDown">Bookings</h1>
-                <br>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sticky-bottom text-center wow fadeInUp">
-          <img src="/images/header1.jpg" alt="" class="img-responsive" data-start="opacity: 1; margin-bottom: 0%;" data-80p="opacity: 0; margin-bottom: -15%;">
-        </div>
-      </div>
-    </section>
-  <!-- End intro / Video version -->
-  <!-- Start testimonials -->
-  <!-- End testimonials -->
-    <footer>
-      <div class="container">
-        <div class="divide-xs"></div>
-        <div class="row text-center">
-          <div class="col-sm-12 divide-sm">
-            <h2>Beta Access</h2>
-            <hr />
-            <br />
-            <p>We are looking
-for 50 early adopters,<br>
-to work closely with and help
-make the Nobbble better.</p>
-
-<h3>Signup today to get in line!</h3>
-<br />
-<!--   %if cookies[:saved_lead] %>
-    <h1>Thanks for signin up!</h1>
-  % else %> -->
-
-
-<%= form_for @lead do |f| %>
-  <form>
-    <div class="form-group jumbotron">
-
-  <%= f.select :devise, ["iPhone", "Android"], prompt: "Choose Your Device"  %>
-   </div>
-   <div class="form-group">
-      <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %>
-    </div>
-    <div class="form-group">
-      <%= f.email_field :email, type: 'email', placeholder: 'Email', class: 'form-control'  %>
-    </div>
-    <div class="form-group">
-      <%= f.text_field :social_media, type: 'social_media',placeholder: 'Yoursite.com/example', class: 'form-control' %>
-    </div>
-    <hr />
-    <button type="submit" class="btn btn-primary btn-block">Register Today For Early Access</button>
-  </form>
+<!-- here goes the snipps -->
 <% end %>
 <br />
 <br />
@@ -93,11 +35,6 @@ make the Nobbble better.</p>
           </div>
         </div>
       </div>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><%= link_to "Sign in", new_admin_session_path %></li>
-                    <li><%= link_to "Sign Up", new_admin_registration_path, class: "button" %></li>
-                </ul>
     </footer>
 
 <% end %>

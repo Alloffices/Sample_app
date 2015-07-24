@@ -37296,3 +37296,1619 @@ ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.pn
   Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
   Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (301.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 17:02:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TennisCourtsController#index as HTML
+  Rendered tennis_courts/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 1694ms (Views: 1636.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/header2.jpg" for ::1 at 2015-07-23 17:02:45 -0400
+
+
+Started GET "/d/users/sign_in" for ::1 at 2015-07-23 17:03:14 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (166.8ms)
+Completed 200 OK in 485ms (Views: 457.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/d/users/sign_in" for ::1 at 2015-07-23 17:03:20 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m1cwBaSuW5GtK4k5FHl0uh9ZzjQHdShtsUWbR6fMsJLU6uc4MkZAsit2LbUFkmZ8FH+0LHOn2aSBNLmJn/tg/w==", "user"=>{"email"=>"alloffices.nyc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (20.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "alloffices.nyc@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-07-23 18:36:58.813635"], ["current_sign_in_at", "2015-07-23 21:03:21.138563"], ["sign_in_count", 6], ["updated_at", "2015-07-23 21:03:21.140537"], ["id", 1]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 258ms (ActiveRecord: 22.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 17:03:21 -0400
+Processing by TennisCourtsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTennisCourt Load (0.6ms)[0m  [1mSELECT "tennis_courts".* FROM "tennis_courts"[0m
+  Rendered tennis_courts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 293ms (Views: 290.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 17:03:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (78.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (543.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (207.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (511.7ms)
+
+
+Started GET "/tennis_courts/1/bookings" for ::1 at 2015-07-23 17:03:23 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.3ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (12.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-23 21:03:23.164322')  ORDER BY "bookings"."start_time" ASC
+  Rendered bookings/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 392ms (Views: 298.3ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 17:03:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (22.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (327.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (165.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (352.7ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 17:03:28 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.7ms)
+  Rendered bookings/_form.html.erb (26.2ms)
+  Rendered bookings/new.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 328ms (Views: 263.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 17:03:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (226.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (124.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (284.1ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437685401672" for ::1 at 2015-07-23 17:03:29 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437685401672", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.6ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-23 21:03:29.349325')  ORDER BY "bookings"."start_time" ASC
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 17:03:31 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9W6h+eE74cTU5gygcNNRfKt4M+gRPhnaIM/OEgegPrk5ymqvAjZR9ImczVvIxIQvlY49w8Ke9Zob08CW5u/riw==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"28", "start_time(4i)"=>"21", "start_time(5i)"=>"00", "length"=>""}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ?  [["tennis_court_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ?[0m  [["tennis_court_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ?  [["tennis_court_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ?[0m  [["tennis_court_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ?  [["tennis_court_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered bookings/_errors.html.erb (2.8ms)
+  Rendered bookings/_form.html.erb (20.4ms)
+  Rendered bookings/new.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 258ms (Views: 234.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 17:03:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (256.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (123.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (278.0ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437685412046" for ::1 at 2015-07-23 17:03:32 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437685412046", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-23 21:03:32.739573')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 16ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 17:03:35 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gz+SmjXSc1m2d4hzsQLrKqJVHU0h8Ei50x3Yc3CIhM9Pm1nM1t/DaesNSYgJFT55nKMTZvJQpPnoAdb3kcdR/Q==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"28", "start_time(4i)"=>"21", "start_time(5i)"=>"00", "length"=>"1"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-28 21:00:00.000000' AND end_time < '2015-07-28 21:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-28 21:00:00.000000' AND start_time < '2015-07-28 21:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-28 21:00:00.000000' AND end_time < '2015-07-28 21:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-28 21:00:00.000000' AND end_time > '2015-07-28 21:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-28 21:00:00.000000' AND end_time = '2015-07-28 21:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mSQL (23.6ms)[0m  INSERT INTO "bookings" ("length", "start_time", "user_id", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)  [["length", 1], ["start_time", "2015-07-28 21:00:00.000000"], ["user_id", 1], ["tennis_court_id", 1], ["end_time", "2015-07-28 21:59:00.000000"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tennis_courts/1/bookings?method=get
+Completed 302 Found in 51ms (ActiveRecord: 37.7ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 17:03:35 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-23 21:03:35.360888')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `image' for #<Booking:0x007fb6960a17f8>):
+    14:       <div class="panel panel-default">
+    15:         <div class="panel-heading">
+    16:           <% if booking.user == current_user %>
+    17:             <div class="round-image-80"><%= image_tag(booking.image.url(:thumb)) %>
+    18:             </div>
+    19:             <br />
+    20:             <%= booking.user.name %><br />
+  app/views/bookings/index.html.erb:17:in `block in _app_views_bookings_index_html_erb___543964863980772502_70211102821580'
+  app/views/bookings/index.html.erb:10:in `_app_views_bookings_index_html_erb___543964863980772502_70211102821580'
+  app/controllers/bookings_controller.rb:10:in `index'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (164.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (119.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (271.6ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 17:03:50 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-23 21:03:50.963859')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 258ms (Views: 255.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 17:03:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (241.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (173.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (332.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 21:02:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TennisCourtsController#index as HTML
+  [1m[35mUser Load (20.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTennisCourt Load (0.6ms)[0m  [1mSELECT "tennis_courts".* FROM "tennis_courts"[0m
+  Rendered tennis_courts/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 2100ms (Views: 2021.5ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:02:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (38.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (354.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (167.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (379.0ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:02:54 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.3ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/_errors.html.erb (15.9ms)
+  Rendered bookings/_form.html.erb (139.0ms)
+  Rendered bookings/new.html.erb within layouts/application (164.5ms)
+Completed 200 OK in 666ms (Views: 503.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:02:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (231.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (128.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (282.1ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699769104" for ::1 at 2015-07-23 21:02:56 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699769104", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (1.7ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.5ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:02:56.360795')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 20ms (Views: 2.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:02:59 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptxW+THpLljz58EtZuALocQNAwiHzjeabnHY8ScBPaJqeJ2v0uSeaK6dANbe997y+vsNI1Ru29pVbdZ1xk7okA==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"27", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"2"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-27 01:00:00.000000' AND end_time < '2015-07-27 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-27 01:00:00.000000' AND start_time < '2015-07-27 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-27 01:00:00.000000' AND end_time < '2015-07-27 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-27 01:00:00.000000' AND end_time > '2015-07-27 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-27 01:00:00.000000' AND end_time = '2015-07-27 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "bookings" ("length", "start_time", "user_id", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)  [["length", 2], ["start_time", "2015-07-27 01:00:00.000000"], ["user_id", 1], ["tennis_court_id", 1], ["end_time", "2015-07-27 02:59:00.000000"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.3ms)
+
+NoMethodError (undefined method `limit' for true:TrueClass):
+  app/controllers/bookings_controller.rb:22:in `create'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (150.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (134.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (289.8ms)
+
+
+Started GET "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:03:36 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:03:36.527729')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 325ms (Views: 302.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:03:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (269.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (119.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (282.1ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:03:38 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.1ms)
+  Rendered bookings/_form.html.erb (6.0ms)
+  Rendered bookings/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 354ms (Views: 344.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:03:38 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (210.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (126.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (279.4ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699816954" for ::1 at 2015-07-23 21:03:39 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699816954", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:03:39.495292')  ORDER BY "bookings"."start_time" ASC
+Completed 200 OK in 16ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:03:42 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BzI6ofMLiAKVPNUnyt9y3HY7LVErvZMnDUjcuc7J4uXLlvH3EAY4MshGFNxyyKePSM0jevgdf2c2VNI9L4Y31w==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"9", "start_time(3i)"=>"24", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"2"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `limit' for #<ActionController::Parameters:0x007fc2d6a90e48>):
+  app/controllers/bookings_controller.rb:19:in `create'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (140.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (121.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (269.9ms)
+
+
+Started GET "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:04:02 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:02.525374')  ORDER BY "bookings"."start_time" ASC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 256ms (Views: 236.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:02 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (228.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (126.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (279.4ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:04:04 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (2.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.5ms)
+
+NoMethodError (undefined method `limit' for #<Booking:0x007fc2d7e4aa38>):
+  app/controllers/bookings_controller.rb:14:in `new'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (204.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (126.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (289.7ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:04:05 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `limit' for #<Booking:0x007fc2d2746110>):
+  app/controllers/bookings_controller.rb:14:in `new'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (134.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (116.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (266.2ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:04:23 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.7ms)
+  Rendered bookings/_form.html.erb (5.7ms)
+  Rendered bookings/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 283ms (Views: 239.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (314.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (124.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (292.7ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699864279" for ::1 at 2015-07-23 21:04:24 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699864279", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (1.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:24.992297')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 33ms (Views: 3.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:04:28 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iHR78vQatXGYkhGRm8aAgAHPpCpnB7t7qaTeYpzyGFRE0LCkFxcFQcXo0Goj0VXTPzmqAbSnVzuSuNDmfb3NZg==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"10", "start_time(3i)"=>"24", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"2"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-10-24 01:00:00.000000' AND end_time < '2015-10-24 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-10-24 01:00:00.000000' AND start_time < '2015-10-24 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-10-24 01:00:00.000000' AND end_time < '2015-10-24 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-10-24 01:00:00.000000' AND end_time > '2015-10-24 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-10-24 01:00:00.000000' AND end_time = '2015-10-24 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "bookings" ("length", "start_time", "user_id", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)  [["length", 2], ["start_time", "2015-10-24 01:00:00.000000"], ["user_id", 1], ["tennis_court_id", 1], ["end_time", "2015-10-24 02:59:00.000000"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tennis_courts/1/bookings?method=get
+Completed 302 Found in 34ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 21:04:28 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:28.129567')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 258ms (Views: 255.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (284.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (173.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (367.1ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:04:29 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.2ms)
+  Rendered bookings/_form.html.erb (8.9ms)
+  Rendered bookings/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 492ms (Views: 486.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (280.9ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699868489" for ::1 at 2015-07-23 21:04:30 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699868489", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:30.823045')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 17ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:04:32 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T3hpfTJqqyxRaV2AFNopXmRmb5Y/Gd8lGKYf4V2/HrGD3KIr0WcbHAwTnHuszfwNWpBhvey5M2UjuhFlvPDLgw==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"26", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"2"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-26 01:00:00.000000' AND end_time < '2015-07-26 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-26 01:00:00.000000' AND start_time < '2015-07-26 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-26 01:00:00.000000' AND end_time < '2015-07-26 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-26 01:00:00.000000' AND end_time > '2015-07-26 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-26 01:00:00.000000' AND end_time = '2015-07-26 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "bookings" ("length", "start_time", "user_id", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)  [["length", 2], ["start_time", "2015-07-26 01:00:00.000000"], ["user_id", 1], ["tennis_court_id", 1], ["end_time", "2015-07-26 02:59:00.000000"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tennis_courts/1/bookings?method=get
+Completed 302 Found in 18ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 21:04:33 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:33.017539')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 243ms (Views: 240.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (411.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (165.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (463.9ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:04:34 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.3ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.5ms)
+  Rendered bookings/_form.html.erb (16.0ms)
+  Rendered bookings/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 474ms (Views: 466.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699873329" for ::1 at 2015-07-23 21:04:35 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699873329", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:35.033958')  ORDER BY "bookings"."start_time" ASC
+Completed 200 OK in 20ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:35 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (212.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (126.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (278.9ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:04:38 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zh708wJeBOQ5AE++AZ1gv6wa9bzL0PGL9xcTwxbJDyaquj+l4VO01GR6jkW5irXskuz7lxhwHcvMCx1H94baFA==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"30", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"2"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.3ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-30 01:00:00.000000' AND end_time < '2015-07-30 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-30 01:00:00.000000' AND start_time < '2015-07-30 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-30 01:00:00.000000' AND end_time < '2015-07-30 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-30 01:00:00.000000' AND end_time > '2015-07-30 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-30 01:00:00.000000' AND end_time = '2015-07-30 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bookings" ("length", "start_time", "user_id", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)[0m  [["length", 2], ["start_time", "2015-07-30 01:00:00.000000"], ["user_id", 1], ["tennis_court_id", 1], ["end_time", "2015-07-30 02:59:00.000000"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/tennis_courts/1/bookings?method=get
+Completed 302 Found in 18ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 21:04:38 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:38.497315')  ORDER BY "bookings"."start_time" ASC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 252ms (Views: 248.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:38 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (24.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (301.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (276.9ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:04:40 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.1ms)
+  Rendered bookings/_form.html.erb (5.3ms)
+  Rendered bookings/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 347ms (Views: 340.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (210.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (127.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (282.9ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699878838" for ::1 at 2015-07-23 21:04:41 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699878838", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:41.702734')  ORDER BY "bookings"."start_time" ASC
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:04:44 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dvupEQbC2J7u+H8pOzjuLjX2ToI9RIz4qlt7G9sr1bO6X2JH5c9orrOCvtKDLzt9CwBAqe7kYLiRR3WfOmQAgQ==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"29", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"2"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-29 01:00:00.000000' AND end_time < '2015-07-29 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-29 01:00:00.000000' AND start_time < '2015-07-29 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-29 01:00:00.000000' AND end_time < '2015-07-29 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-29 01:00:00.000000' AND end_time > '2015-07-29 02:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.7ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-29 01:00:00.000000' AND end_time = '2015-07-29 02:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bookings" ("length", "start_time", "user_id", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)[0m  [["length", 2], ["start_time", "2015-07-29 01:00:00.000000"], ["user_id", 1], ["tennis_court_id", 1], ["end_time", "2015-07-29 02:59:00.000000"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/tennis_courts/1/bookings?method=get
+Completed 302 Found in 24ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 21:04:44 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:04:44.425779')  ORDER BY "bookings"."start_time" ASC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 267ms (Views: 264.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:04:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (229.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (119.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (265.4ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 21:05:13 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:05:14.135582')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 270ms (Views: 250.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:05:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (23.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (233.9ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (126.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (280.5ms)
+
+
+Started GET "/tennis_courts/1/bookings/new" for ::1 at 2015-07-23 21:05:17 -0400
+Processing by BookingsController#new as HTML
+  Parameters: {"tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered bookings/_errors.html.erb (0.1ms)
+  Rendered bookings/_form.html.erb (8.3ms)
+  Rendered bookings/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 340ms (Views: 330.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:05:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (219.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (119.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (269.1ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699914459" for ::1 at 2015-07-23 21:05:18 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699914459", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:05:18.352004')  ORDER BY "bookings"."start_time" ASC
+Completed 200 OK in 20ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:05:21 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UlsLXamcOmgRJcLr/5DrgyPAb0yhBBzer6XJk2Xrw4ye/8ALSpGKWExfAxBHhz7QHTZhZ3Kk8J6UuccXhKQWvg==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"27", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"3"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[36mTennisCourt Load (0.2ms)[0m  [1mSELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mBooking Load (0.7ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-27 01:00:00.000000' AND end_time < '2015-07-27 03:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-27 01:00:00.000000' AND start_time < '2015-07-27 03:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-27 01:00:00.000000' AND end_time < '2015-07-27 03:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-27 01:00:00.000000' AND end_time > '2015-07-27 03:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.1ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-27 01:00:00.000000' AND end_time = '2015-07-27 03:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered bookings/_errors.html.erb (0.1ms)
+  Rendered bookings/_form.html.erb (5.6ms)
+  Rendered bookings/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 253ms (Views: 218.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:05:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (235.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (123.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (276.1ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699921878" for ::1 at 2015-07-23 21:05:22 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699921878", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:05:22.534383')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 20ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tennis_courts/1/bookings" for ::1 at 2015-07-23 21:05:26 -0400
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggPep/TCOfDloNypurGw+lN3tZo67jcPhxd+mvVVTRdOpxXxF8+JwLjaHVICpmWpbYG7selO20+8C3AeFBqYJQ==", "booking"=>{"start_time(1i)"=>"2015", "start_time(2i)"=>"7", "start_time(3i)"=>"28", "start_time(4i)"=>"01", "start_time(5i)"=>"00", "length"=>"3"}, "commit"=>"Submit", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBooking Load (2.1ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (end_time > '2015-07-28 01:00:00.000000' AND end_time < '2015-07-28 03:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-28 01:00:00.000000' AND start_time < '2015-07-28 03:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time > '2015-07-28 01:00:00.000000' AND end_time < '2015-07-28 03:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mBooking Load (0.2ms)[0m  SELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time < '2015-07-28 01:00:00.000000' AND end_time > '2015-07-28 03:59:00.000000')  [["tennis_court_id", 1]]
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE "bookings"."tennis_court_id" = ? AND (start_time = '2015-07-28 01:00:00.000000' AND end_time = '2015-07-28 03:59:00.000000')[0m  [["tennis_court_id", 1]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "bookings" ("user_id", "length", "start_time", "tennis_court_id", "end_time") VALUES (?, ?, ?, ?, ?)  [["user_id", 1], ["length", 3], ["start_time", "2015-07-28 01:00:00.000000"], ["tennis_court_id", 1], ["end_time", "2015-07-28 03:59:00.000000"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tennis_courts/1/bookings?method=get
+Completed 302 Found in 25ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/tennis_courts/1/bookings?method=get" for ::1 at 2015-07-23 21:05:26 -0400
+Processing by BookingsController#index as HTML
+  Parameters: {"method"=>"get", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:05:26.755511')  ORDER BY "bookings"."start_time" ASC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookings/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 261ms (Views: 257.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2015-07-23 21:05:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (230.0ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (125.4ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/mannyquintanilla/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (277.6ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699935458" for ::1 at 2015-07-23 21:05:35 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699935458", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:05:35.587880')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 18ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tennis_courts/1/bookings/?start=1435464000&end=1439092800&_=1437699936612" for ::1 at 2015-07-23 21:05:36 -0400
+Processing by BookingsController#index as JSON
+  Parameters: {"start"=>"1435464000", "end"=>"1439092800", "_"=>"1437699936612", "tennis_court_id"=>"1"}
+  [1m[35mTennisCourt Load (0.2ms)[0m  SELECT  "tennis_courts".* FROM "tennis_courts" WHERE "tennis_courts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE (tennis_court_id = 1 AND end_time >= '2015-07-24 01:05:36.744394')  ORDER BY "bookings"."start_time" ASC[0m
+Completed 200 OK in 20ms (Views: 5.4ms | ActiveRecord: 0.6ms)
