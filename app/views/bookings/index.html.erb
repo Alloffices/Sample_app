@@ -50,8 +50,6 @@
             <div class="booking-list-edit">
           <% if current_user.try(:admin?) %>
 
-<p><%= booking.get_upvotes.count %></p>
-
             <%= link_to "Request", like_tennis_court_booking_path(@tennis_court, booking), method: :get, class: "btn btn-success btn-block" %>
 
 
@@ -59,6 +57,7 @@
           <% elsif booking.user == current_user %>
             <%= link_to "Delete", tennis_court_booking_path(@tennis_court, booking), class: "btn btn-default" , data: { confirm: 'Are you sure?' }, method: :delete %>
             <%= link_to "Edit", edit_tennis_court_booking_path(@tennis_court, booking), class: "btn btn-info" %>
+            <p><%= booking.get_upvotes.size %></p>
           <% else %>
           <% end %>
 

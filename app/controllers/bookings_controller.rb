@@ -7,7 +7,7 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.where("tennis_court_id = ? AND end_time >= ?", @tennis_court.id, Time.now).order(:start_time)
-    respond_with @bookings
+      respond_with @bookings
   end
 
   def new

@@ -1,5 +1,5 @@
 <div class="container">
-
+<br />
 <h3> Bookings for <%= current_user.name %></h3>
 
 <hr />
@@ -28,10 +28,6 @@
               <div class="pull-right text-muted small"><%= (booking.calculate_end_time + 60).strftime('%H:%M%p')%>
               </div>
           </div>
-        <br />
-        <div class="booking-list-edit">
-          <h3><%= link_to "Delete", profile_show_path(@booking), class: "btn btn-default", data: { confirm: 'Are you sure?' }, method: :delete %></h3>
-        </div>
         </div>
       </div>
     </div>

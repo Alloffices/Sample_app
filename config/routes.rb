@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
 
+  delete 'logout'  => 'sessions#destroy'
+
   devise_for :users, :path_prefix => 'd'
   resources :users, :only =>[:show]
   resources :leads
