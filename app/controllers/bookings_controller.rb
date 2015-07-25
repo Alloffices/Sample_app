@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
 
   before_action :find_tennis_court
 
-  before_action :authenticate, except: [:index, :show]
+  before_action :authenticate, except: [:index, :show, :upvote]
 
   def index
     @bookings = Booking.where("tennis_court_id = ? AND end_time >= ?", @tennis_court.id, Time.now).order(:start_time)
@@ -39,6 +39,16 @@ class BookingsController < ApplicationController
       render 'index'
     end
   end
+
+
+
+  def upvote
+    @booking.upvote_by current_user.try(:admin?)
+    redirect_to :back
+  end
+
+
+
 
   def edit
     @booking = Booking.find(params[:id])
