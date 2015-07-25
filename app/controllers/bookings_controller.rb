@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
 
   before_action :find_tennis_court
 
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate, except: [:index, :show]
 
   def index
     @bookings = Booking.where("tennis_court_id = ? AND end_time >= ?", @tennis_court.id, Time.now).order(:start_time)
@@ -62,6 +62,11 @@ class BookingsController < ApplicationController
   end
 
   private
+
+  def authenticate
+    :authenticate_user! && current_user.try(:admin?)
+  end
+
 
   def save booking
     if @booking.save

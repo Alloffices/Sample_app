@@ -1,13 +1,20 @@
-
-
+<div class="container">
+  <div class="tennis_court">
 
 <% if user_signed_in? || admin_signed_in? %>
 
 <br />
 	<% @tennis_courts.each do |tennis_court| %>
-  <div class="container">
-	  <div class="tennis_court">
-      <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block" %>
+
+
+<% if current_user.try(:admin?) %>
+  <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
+
+<% else %>
+  <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block" %>
+<% end %>
+
+
   <!-- link_to "Delete", tennis_court_path(tennis_court), data: { confirm: 'Are you sure?' }, method: :delete %>
  link_to "Edit", edit_tennis_court_path(tennis_court) %> --><br />
       <%= link_to "New Space Booking", new_tennis_court_path, class: "btn btn-default btn-warning"  %>

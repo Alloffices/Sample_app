@@ -4,6 +4,10 @@ body {
   text-align: center;
 }
 
+*{
+  font-family: Helvetica;
+}
+
 .navbar-brand {
   color: #000;
 }
@@ -16,11 +20,20 @@ body {
   padding: 10px;
 }
 
+input[type="number"] { 
+  width:30px; 
+}
+
 .bookings_table input[type="number"] {
   width:30px;
 }
 
 .bookings_table{
+  font-size: 14px;
+  color: gray;
+}
+
+table{
   font-size: 14px;
   color: gray;
 }
@@ -33,3 +46,16 @@ body {
 	margin: auto;
 	width: 80%;
 }
+
+/*#calendar*/
+
+
+
+
+
+
+
+
+
+
+

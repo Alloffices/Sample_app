@@ -5,17 +5,19 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   
-  has_many :bookings  do
+  has_many :bookings  
 
-    def today
-      where(:created_at => (Time.zone.now.beginning_of_day..Time.zone.now))
-    end
+  # do
 
-    def this_week
-      where(:created_at => (Time.zone.now.beginning_of_week..Time.zone.now))
-    end
+  #   def today
+  #     where(:created_at => (Time.zone.now.beginning_of_day..Time.zone.now))
+  #   end
 
-  end
+  #   def this_week
+  #     where(:created_at => (Time.zone.now.beginning_of_week..Time.zone.now))
+  #   end
+
+  # end
 
   has_attached_file :image, styles: { medium: "300x300#", thumb: "100x100#" }
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/

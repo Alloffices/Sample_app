@@ -1,11 +1,33 @@
+<h3>
+  Add booking for 
+  <%= @tennis_court.name %>
+</h3>
+<% if @booking.errors.any? %>
+  <div class="errors">
+    <h3>
+      <%= pluralize(@booking.errors.count, 'error') %>
+      prohibited this booking from being saved:
+    </h3>
+    <ul>
+      <% @booking.errors.full_messages.each do |message| %>
+        <li>
+          <%= message %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 <%= form_for([@tennis_court, @booking]) do |f| %>
   <p>
     <%= f.label 'start_time', 'Start time' %>
-    <%= f.datetime_select :start_time, { minute_step: 15 } %>
+    <%= f.datetime_select :start_time, {minute_step: 15}, class: "btn btn-primary"  %>
   </p>
   <p>
     <%= f.label 'length', 'Length of booking in hours' %>
     <%= f.number_field 'length', min: 1 %>
   </p>
   <%= f.submit 'Submit' %>
-<% end %> 
+<% end %>
+<div class="calendar_container">
+  <div id="calendar"></div>
+</div>

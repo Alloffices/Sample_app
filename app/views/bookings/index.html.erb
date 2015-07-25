@@ -1,8 +1,12 @@
 <br />
 <div class="container">
-  <h2><%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %></h2>
-    <%= link_to "Users", users_show_path, class: "btn btn-default btn-block" %>
 
+  <% if current_user.try(:admin?) %>
+      <%= link_to "Users", users_show_path, class: "btn btn-default btn-block" %>
+
+  <% else %>
+    <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
+  <% end %>
   <hr />
   <% if user_signed_in? %>
 
@@ -42,13 +46,17 @@
                 </div>
           </div>
 
-          <% if booking.user == current_user %>
-            <div class="booking-list-edit">
-                <%= link_to "Delete", tennis_court_booking_path(@tennis_court, booking), class: "btn btn-default" , data: { confirm: 'Are you sure?' }, method: :delete %>
+<!-- admin options acts as votable -->
 
-                <%= link_to "Edit", edit_tennis_court_booking_path(@tennis_court, booking), class: "btn btn-default " %>
-            </div>
+            <div class="booking-list-edit">
+          <% if current_user.try(:admin?) %>
+            <%= link_to "Join Project","#", method: :get, class: "btn btn-default btn-block" %>
+          <% elsif booking.user == current_user %>
+            <%= link_to "Delete", tennis_court_booking_path(@tennis_court, booking), class: "btn btn-default" , data: { confirm: 'Are you sure?' }, method: :delete %>
+            <%= link_to "Edit", edit_tennis_court_booking_path(@tennis_court, booking), class: "btn btn-info" %>
+          <% else %>
           <% end %>
+
         </div>
       </div>
   </div>
