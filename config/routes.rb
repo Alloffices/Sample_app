@@ -25,7 +25,11 @@ Rails.application.routes.draw do
   
   resources :tennis_courts do
   resources :profile
-  resources :bookings
+  resources :bookings do
+    member do
+      get "like", to: "post#upvote"
+    end
+  end
     # member do
     #   get "Like", to: 'bookings#upvote'
     #   get "Dislike", to: 'bookings#downvote'

@@ -1,12 +1,14 @@
+<div class="container">
+
 <h3> Bookings for <%= current_user.name %></h3>
 
 <hr />
 
-<% if current_user.booking %>
+<% if current_user.bookings %>
 
-  <% current_user.booking.each do |booking| %>
+  <% current_user.bookings.each do |booking| %>
 
-<div clas="container" id="page-wrapper">
+<div class="container" id="page-wrapper">
   <div class="col-lg-4">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -25,15 +27,19 @@
             <i class="fa fa-twitter fa-fw"></i> End Time
               <div class="pull-right text-muted small"><%= (booking.calculate_end_time + 60).strftime('%H:%M%p')%>
               </div>
-            </div>
-
+          </div>
+        <br />
+        <div class="booking-list-edit">
+          <h3><%= link_to "Delete", profile_show_path(@booking), class: "btn btn-default", data: { confirm: 'Are you sure?' }, method: :delete %></h3>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+</div>
 <!-- 
-        <%= link_to "Delete", profile_show_path(@booking), data: { confirm: 'Are you sure?' }, method: :delete %> -->
+  </div> -->
 
   <% end %>
 

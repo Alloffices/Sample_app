@@ -1,9 +1,10 @@
 require_relative './concerns/bookable'
 
 class Booking < ActiveRecord::Base
+	acts_as_votable
 
   	include Bookable
-
+  	
   	belongs_to :user
 
  	# validate :user_quota, :on => :create
