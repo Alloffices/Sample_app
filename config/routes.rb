@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   resources :profile
   resources :bookings do
     member do
-      get "like", to: 'bookings#index'
+      get "like", to: 'bookings#upvote'
     end
   end
 

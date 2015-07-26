@@ -49,10 +49,8 @@
 
             <div class="booking-list-edit">
           <% if current_user.try(:admin?) %>
-            <p><%= booking.get_upvotes.size %> Requests</p>
+
             <%= link_to "Request", like_tennis_court_booking_path(@tennis_court, booking), method: :get, class: "btn btn-success btn-block" %>
-
-
 
           <% elsif booking.user == current_user %>
             <p><%= booking.get_upvotes.size %> Requests</p>
