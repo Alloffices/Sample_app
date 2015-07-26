@@ -8,7 +8,7 @@ class RequestedMailer < ActionMailer::Base
 
 		mail(to: booking_user.email,
 			subject: "Request From Another Creative",
-			body: "Hi, This is another request for session. #{current_user.social_media}"
+			body: "Hi, This is another request for session. #{current_user.name}, #{current_user.email}, #{current_user.social_media}, #{current_user.skill} "
 			)
 	end
 

@@ -17,17 +17,131 @@
     </ul>
   </div>
 <% end %>
-<%= form_for([@tennis_court, @booking]) do |f| %>
-  <p>
-    <%= f.label 'start_time', 'Start time' %>
-    <%= f.datetime_select :start_time, {minute_step: 15}, class: "btn btn-primary"  %>
-  </p>
-  <p>
-    <%= f.label 'length', 'Length of booking in hours' %>
-    <%= f.number_field 'length', min: 1 %>
-  </p>
-  <%= f.submit 'Submit' %>
-<% end %>
+
+<div class="container">
+  <%= form_for([@tennis_court, @booking]) do |f| %>
+    <p>
+      <%= f.label 'start_time', 'Start time' %>
+      <br />
+      <%= f.datetime_select :start_time, {minute_step: 15} %>
+    </p>
+    <p>
+      <%= f.label 'length', 'Length of booking in hours' %>
+      <%= f.number_field 'length', min: 1 %>
+    </p>
+    <%= f.submit 'Submit' %>
+  <% end %>
+</div>
+
+<br />
+
+<form class="new_booking" id="new_booking" action="/tennis_courts/1/bookings" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="1LUIuHVgsgUUa8tqZXOZpZtvlnPYcXryVZ4UUa+Ymi9BKXBgsnLjZ3wYi4HRFvywZYGzRcRIXr2u2b7KTchf3Q==">
+    <p>
+    <label for="booking_start_time">Start time</label>
+    <br>
+  <select id="booking_start_time_2i" name="booking[start_time(2i)]">
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="4">April</option>
+    <option value="5">May</option>
+    <option value="6">June</option>
+    <option value="7" selected="selected">July</option>
+    <option value="8">August</option>
+    <option value="9">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+  </select>
+
+
+<select id="booking_start_time_3i" name="booking[start_time(3i)]" class="btn btn-primary btn-block btn-lg">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26" selected="selected">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+ — <select id="booking_start_time_4i" name="booking[start_time(4i)]" class="btn btn-primary btn-block btn-lg">
+<option value="00">00</option>
+<option value="01" selected="selected">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+</select>
+ : <select id="booking_start_time_5i" name="booking[start_time(5i)]" class="btn btn-primary btn-block btn-lg">
+<option value="00">00</option>
+<option value="15">15</option>
+<option value="30">30</option>
+<option value="45">45</option>
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+    <p>
+      <label for="booking_length">Length of booking in hours</label>
+      <input min="1" type="number" name="booking[length]" id="booking_length">
+    </p>
+    <input type="submit" name="commit" value="Submit">
+</form>
+
+
+
 <div class="calendar_container">
   <div id="calendar"></div>
 </div>

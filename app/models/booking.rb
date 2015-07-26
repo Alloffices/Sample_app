@@ -12,7 +12,7 @@ class Booking < ActiveRecord::Base
 
   # 	def user_quota
 
-		# if user.bookings.today.count >= 2
+		# if user.bookings.today.count >= 5
 		# errors.add(:base, "Exceeds daily limit")
 	
 		# elsif user.bookings.this_week.count >= 5
