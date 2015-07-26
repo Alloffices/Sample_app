@@ -1,7 +1,7 @@
-<h3>
-  Add booking for 
-  <%= @tennis_court.name %>
-</h3>
+<br />
+
+ <kin></kin>
+ <hr />
 <% if @booking.errors.any? %>
   <div class="errors">
     <h3>
@@ -20,42 +20,44 @@
 
 <div class="container">
   <%= form_for([@tennis_court, @booking]) do |f| %>
-    <p>
-      <%= f.label 'start_time', 'Start time' %>
-      <br />
-      <%= f.datetime_select :start_time, {minute_step: 15} %>
-    </p>
-    <p>
-      <%= f.label 'length', 'Length of booking in hours' %>
-      <%= f.number_field 'length', min: 1 %>
-    </p>
-    <%= f.submit 'Submit' %>
-  <% end %>
-</div>
 
+<div class="container">
+  <form class="new_booking" id="new_booking" action="/tennis_courts/1/bookings" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="bnowSjOKmS+FBAKCtugS2P3XwFIJh/o/sOA4fJIy6v55zF+7J/mDuh6jVmiq/rpcNNdeZ8C9bmDHKG/A55n3Zw==">
+
+      <select id="booking_start_time_1i" name="booking[start_time(1i)]">
+<!-- <option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option> -->
+<option value="2015" selected="selected">2015</option>
+<!-- <option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option> -->
+</select>
 <br />
-
-<form class="new_booking" id="new_booking" action="/tennis_courts/1/bookings" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="1LUIuHVgsgUUa8tqZXOZpZtvlnPYcXryVZ4UUa+Ymi9BKXBgsnLjZ3wYi4HRFvywZYGzRcRIXr2u2b7KTchf3Q==">
+<select id="booking_start_time_2i" name="booking[start_time(2i)]">
+<!-- <option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option> -->
+<option value="7" selected="selected">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
+<br />
     <p>
-    <label for="booking_start_time">Start time</label>
-    <br>
-  <select id="booking_start_time_2i" name="booking[start_time(2i)]">
-    <option value="1">January</option>
-    <option value="2">February</option>
-    <option value="3">March</option>
-    <option value="4">April</option>
-    <option value="5">May</option>
-    <option value="6">June</option>
-    <option value="7" selected="selected">July</option>
-    <option value="8">August</option>
-    <option value="9">September</option>
-    <option value="10">October</option>
-    <option value="11">November</option>
-    <option value="12">December</option>
-  </select>
-
-
-<select id="booking_start_time_3i" name="booking[start_time(3i)]" class="btn btn-primary btn-block btn-lg">
+      <label for="booking_length">When Do you want to book</label>
+    </p>
+<select id="booking_start_time_3i" name="booking[start_time(3i)]">
+<option value="1">Choose Date</option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -81,16 +83,21 @@
 <option value="23">23</option>
 <option value="24">24</option>
 <option value="25">25</option>
-<option value="26" selected="selected">26</option>
+<option value="26">26</option>
 <option value="27">27</option>
 <option value="28">28</option>
 <option value="29">29</option>
 <option value="30">30</option>
 <option value="31">31</option>
 </select>
- — <select id="booking_start_time_4i" name="booking[start_time(4i)]" class="btn btn-primary btn-block btn-lg">
+<br />
+    <p>
+      <label for="booking_length">Start Time</label>
+    </p>
+ <select id="booking_start_time_4i" name="booking[start_time(4i)]">
+<option value="00">Hour</option>
 <option value="00">00</option>
-<option value="01" selected="selected">01</option>
+<option value="01">01</option>
 <option value="02">02</option>
 <option value="03">03</option>
 <option value="04">04</option>
@@ -114,31 +121,42 @@
 <option value="22">22</option>
 <option value="23">23</option>
 </select>
- : <select id="booking_start_time_5i" name="booking[start_time(5i)]" class="btn btn-primary btn-block btn-lg">
+ : <select id="booking_start_time_5i" name="booking[start_time(5i)]">
+<option value="00">Minute</option>
 <option value="00">00</option>
 <option value="15">15</option>
 <option value="30">30</option>
 <option value="45">45</option>
 </select>
-
-
-
-
-
-
-
-
-
-
-
-
     </p>
     <p>
       <label for="booking_length">Length of booking in hours</label>
-      <input min="1" type="number" name="booking[length]" id="booking_length">
     </p>
-    <input type="submit" name="commit" value="Submit">
-</form>
+
+    <div class="container">
+      <input min="1" type="text" name="booking[length]" id="booking_length" placeholder="0">
+      <br />
+      <br />
+    </div>
+
+    <br />
+    <div>
+    <input type="submit" name="commit" value="Submit", class="btn btn-success btn-block">
+</form></div>
+  <% end %>
+</div>
+
+<script>
+$( "select" )
+  .change(function() {
+    var str = "";
+    $( "select option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "kin" ).text( str );
+  })
+  .trigger( "change" );
+</script>
 
 
 

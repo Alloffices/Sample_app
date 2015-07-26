@@ -128,14 +128,3 @@ var calendar = function(){
 	});
 
 };
-
-var $videohero = $('.video-hero');
-if ( $videohero.length) {
-    var BV = new $.BigVideo({useFlashForFirefox:false, container:$('.video-hero')});
-    BV.init();
-    if (Modernizr.touch) {
-        BV.show('assets/hero-bg.jpg');
-    } else {
-        BV.show('assets/video-bg.mp4',{altsource:'assets/video-bg.ogg',ambient:true});
-    }
-}

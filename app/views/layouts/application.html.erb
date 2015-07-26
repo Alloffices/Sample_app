@@ -6,6 +6,17 @@
   <title>Nobbble.com</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <style>
+  kin {
+    color: #4b5569;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -38,7 +49,7 @@
                         <%= link_to "Profile", edit_user_registration_path %>
                     </li>
                     <li>
-                        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+                      <%= link_to "Log out", destroy_user_session_path, method: :delete %>
                     </li>
                 </ul>
               <% else %>
@@ -52,7 +63,6 @@
         </div>
       </nav>
 <div>
-
 <%= yield %>
 </div>
 
