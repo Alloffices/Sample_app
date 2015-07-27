@@ -15,7 +15,6 @@
     font-size: 19px;
   }
   </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <%= csrf_meta_tags %>
 </head>
@@ -39,12 +38,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <% if user_signed_in? || admin_signed_in? %>
+              <% if user_signed_in? %>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="round-image-50"><%= image_tag(current_user.image.url(:thumb)) %></li>
+                    <% if current_user.try(:admin?) %>
+                    <li>
+                        <%= link_to current_user.name, "" %>
+                    </li>
+                    <% elsif current_user %>
                     <li>
                         <%= link_to current_user.name, profile_show_path %>
                     </li>
+                    <% else %>
+                    <% end %>
                     <li>
                         <%= link_to "", edit_user_registration_path, class: "glyphicon glyphicon-cog" %>
                     </li>

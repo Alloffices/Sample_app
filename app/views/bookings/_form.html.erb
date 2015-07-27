@@ -1,29 +1,10 @@
 <br />
-
- <kin></kin>
- <hr />
-<% if @booking.errors.any? %>
-  <div class="errors">
-    <h3>
-      <%= pluralize(@booking.errors.count, 'error') %>
-      prohibited this booking from being saved:
-    </h3>
-    <ul>
-      <% @booking.errors.full_messages.each do |message| %>
-        <li>
-          <%= message %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-
+<kin></kin>
 <div class="container">
   <%= form_for([@tennis_court, @booking]) do |f| %>
 
 <div class="container">
-  <form class="new_booking" id="new_booking" action="/tennis_courts/1/bookings" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="bnowSjOKmS+FBAKCtugS2P3XwFIJh/o/sOA4fJIy6v55zF+7J/mDuh6jVmiq/rpcNNdeZ8C9bmDHKG/A55n3Zw==">
-
+  <form class="new_booking" id="new_booking" action="/tennis_courts/1/bookings" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden">
       <select id="booking_start_time_1i" name="booking[start_time(1i)]">
 <!-- <option value="2010">2010</option>
 <option value="2011">2011</option>
@@ -138,7 +119,6 @@
       <br />
       <br />
     </div>
-
     <br />
     <div>
     <input type="submit" name="commit" value="Submit", class="btn btn-success btn-block">
@@ -157,9 +137,3 @@ $( "select" )
   })
   .trigger( "change" );
 </script>
-
-
-
-<div class="calendar_container">
-  <div id="calendar"></div>
-</div>

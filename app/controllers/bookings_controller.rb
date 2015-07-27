@@ -44,9 +44,7 @@ class BookingsController < ApplicationController
   def upvote
     @booking = Booking.find(params[:id])
     @booking.upvote_by current_user
-
     RequestedMailer.requested_created(current_user, @booking.user).deliver
-
     redirect_to :back
   end
 
