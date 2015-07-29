@@ -1,4 +1,4 @@
-<div class="panel-ego">
+
   <div class="container">
     <% if current_user.try(:admin?) %>
         <h3>Here will be some text</h3>
@@ -21,6 +21,7 @@ position:absolute; bottom:0; -->
     <% @bookings.each do |booking| %>
   <div id="page-wrapper">
     <div class="col-lg-4">
+      <div class="panel-ego">
       <div class="panel panel-default">
         <div class="panel-heading">
           <% if booking.user == current_user %>
