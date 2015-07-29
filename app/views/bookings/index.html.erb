@@ -3,14 +3,8 @@
   <% if current_user.try(:admin?) %>
       <h3>Here will be some text</h3>
   <% else %>
-<div class="container">
-  <div class="row">
-    <div class="mobile-booking">
-      <div class=".col-xs-6 .col-md-4">
-        <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
-      </div>
-    </div>
-  </div>
+<div class="new-booking">
+    <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
 </div>
   <% end %>
 </div>
@@ -82,17 +76,13 @@ position:absolute; bottom:0; -->
   <% end %>
 
 <footer>
-<% if current_user.try(:admin?) %>
-<% elsif current_user %>
-<div class="container">
-  <div class="row">
-    <div class="mobile-booking">
-      <div class=".col-xs-6 .col-md-4">
+  <% if current_user.try(:admin?) %>
+  <% elsif current_user %>
+    <div class="container">
+      <div class="mobile-booking">
         <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-lg btn-block" %>
-      </div>
-    </div>   
+    </div>
   </div>
-</div>
   <% else %>
   <% end %>
 </footer>
