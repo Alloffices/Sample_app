@@ -6622,7 +6622,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-    width: 340px;
+    width: 380px;
     position: fixed;
     bottom: 20px;
   }
@@ -6639,4 +6639,115 @@ button.close {
     display: none;
   }
 }
+
+/*
+
+@media (min-width: 768px) {
+  .bingo {
+      width: 750px;
+  }
+}
+
+.bingo {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+
+
+.note.note-info {
+  background-color: #eef7fb;
+  border-color: #a6e1ec;
+  color: #31708f;
+}
+.note.note-info.note-bordered {
+  background-color: #d5ebf6;
+  border-color: #91d9e8;
+}
+
+.note {
+  margin: 0 0 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.note h1,
+.note h2,
+.note h3,
+.note h4,
+.note h5,
+.note h6 {
+  margin-top: 0;
+}
+.note h1 .close,
+.note h2 .close,
+.note h3 .close,
+.note h4 .close,
+.note h5 .close,
+.note h6 .close {
+  margin-right: -10px;
+}
+.note p {
+  font-size: 13px;
+}
+
+.col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.form-wizard .steps > li > a.step {
+    background-color: #fff;
+    background-image: none;
+    filter: none;
+    border: 0px;
+    box-shadow: none;
+}
+
+.form-wizard .steps > li.active > a.step .number {
+  background-color: #45B6AF;
+  color: #fff;
+}
+
+.form-wizard .steps > li > a.step > .number {
+    background-color: #eee;
+    display: inline-block;
+    text-align: center !important;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 11px 15px 13px 15px;
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -7,14 +7,77 @@
 
     <% if current_user.try(:admin?) %>
     <div class="container">
-  <div class="tennis_court">
+      <div class="new-booking">
+        <div class="tennis_court">
       <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
+    </div>
+  </div>
+
+
+  <div class="container">
+      <div class="row">
+      <div class="mobile-booking">
+        <div class=".col-xs-6 .col-md-4">
+      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
+        </div>
+        </div>
+      </div>
+    </div>
+
+<br />
+<br />
+<div class="container">
+<div class="note note-info note-bordered">
+  <h4 class="block">Bootstrap Native Modals</h4>
+  <p>
+    Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. If you need more control over the Bootstrap Modals please check out <a href="ui_extended_modals.html">
+              extended modals </a>
+              .
+  </p>
+</div>
+</div>
 
     <% else %>
+    <div class="new-booking">
       <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block" %>
-      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default btn-block" %>
+      <br />
+      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default" %>
           </div>
-  </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+      <div class="mobile-booking">
+        <div class=".col-xs-6 .col-md-4">
+
+        <%= link_to "New Booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-lg" %>
+
+        <%= link_to "All bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default btn-lg" %>
+
+        </div>
+        </div>
+      </div>
+    </div>
+<br />
+<br />
+<div class="container">
+<div class="note note-info note-bordered">
+  <h4 class="block">Bootstrap Native Modals</h4>
+  <p>
+    Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. If you need more control over the Bootstrap Modals please check out <a href="ui_extended_modals.html">
+              extended modals </a>
+              .
+  </p>
+</div>
+</div>
+
+
+<br />
+<br />
+
+
     <% end %>
 
 
@@ -25,43 +88,6 @@
 	<% end %>
         <%= link_to "New Space Booking", new_tennis_court_path, class: "btn btn-default btn-warning"  %>
 	<!-- this a back linkt to the All tennis courts list -->
-
-
-
-
-
-
-
-
-
-
-<div class="panel-heading ">
-  <a href="" class="pull-right" ng-click="isCollapsed = !isCollapsed" ui-toggle-class="">
-    <i class="fa fa-angle-up text"></i>
-    <i class="fa fa-angle-down text-active"></i>
-  </a>
-  <span class="font-bold">Mark Detail</span>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <% else %>
@@ -83,14 +109,40 @@
         </div>
       </div>
     </section>
+
+
+
+<!-- <section class="white-bg">
+  <div class="bingo">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-6">
+        <div class="divide-xl"></div>
+        <h2>Well documented</h2>
+        <h3>Plus top-notch free support</h3>
+        <p class="no-margin">Step by step customization packed in one nice document that comes with download. Saves your time so you can be dedicated to your work. Support is available free of charge to all users of our products. Get in touch, we're glad to help.</p>
+        <div class="divide-xl"></div>
+      </div>
+      <img src="http://placehold.it/800x400/7dc800/ffffff" class="img-responsive img-offgrid-left" alt="">
+    </div>
+    
+  </div>
+</section> -->
+
+
+    
   <!-- End intro / Video version -->
   <!-- Start testimonials -->
   <!-- End testimonials -->
-    <footer>
-      <div class="container">
-        <div class="divide-xs"></div>
-        <div class="row text-center">
-          <div class="col-sm-12 divide-sm">
+<!--   %if cookies[:saved_lead] %>
+    <h1>Thanks for signin up!</h1>
+  % else %> -->
+<%= form_for @lead do |f| %>
+  <form>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+        <div class="login-panel panel panel-default">
+      <div class="panel-heading">
             <h2>Beta Access</h2>
             <hr />
             <br />
@@ -100,15 +152,12 @@ to work closely with and help
 make the Nobbble better.</p>
 
 <h3>Signup today to get in line!</h3>
-<br />
-<!--   %if cookies[:saved_lead] %>
-    <h1>Thanks for signin up!</h1>
-  % else %> -->
-<%= form_for @lead do |f| %>
-  <form>
-    <div class="form-group jumbotron">
-
-  <%= f.select :devise, ["iPhone", "Android"], prompt: "Choose Your Device"  %>
+      </div>
+    <div class="panel-body">
+    <form role="form">
+    <fieldset>
+        <div class="form-group">
+<%= f.select :devise, ["iPhone", "Android"], prompt: "Choose Your Device"  %>
    </div>
    <div class="form-group">
       <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %>
@@ -120,70 +169,47 @@ make the Nobbble better.</p>
       <%= f.text_field :social_media, type: 'social_media',placeholder: 'Yoursite.com/example', class: 'form-control' %>
     </div>
     <hr />
-    <button type="submit" class="btn btn-primary btn-block">Register Today For Early Access</button>
-  </form>
+    <button type="submit" class="btn btn-success btn-block">Register Today For Early Access</button>
+</form>
 <% end %>
-        </div>
-      </div>
-        </div>
-      </div>
-<div class="page-prefooter">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-        <h2>About</h2>
-        <p>
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam dolore.
-        </p>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs12 footer-block">
-        <h2>Subscribe Email</h2>
-        <div class="subscribe-form">
-          <form action="javascript:;">
-            <div class="input-group">
-              <input type="text" placeholder="mail@email.com" class="form-control">
-              <span class="input-group-btn">
-              <button class="btn" type="submit">Submit</button>
-              </span>
+
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-        <h2>Follow Us On</h2>
-        <ul class="social-icons">
-          <li>
-            <a href="javascript:;" data-original-title="rss" class="rss"></a>
-          </li>
-          <li>
-            <a href="javascript:;" data-original-title="facebook" class="facebook"></a>
-          </li>
-          <li>
-            <a href="javascript:;" data-original-title="twitter" class="twitter"></a>
-          </li>
-          <li>
-            <a href="javascript:;" data-original-title="googleplus" class="googleplus"></a>
-          </li>
-          <li>
-            <a href="javascript:;" data-original-title="linkedin" class="linkedin"></a>
-          </li>
-          <li>
-            <a href="javascript:;" data-original-title="youtube" class="youtube"></a>
-          </li>
-          <li>
-            <a href="javascript:;" data-original-title="vimeo" class="vimeo"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-        <h2>Contacts</h2>
-        <address class="margin-bottom-40">
-        Phone: 800 123 3456<br>
-         Email: <a href="mailto:info@metronic.com">info@metronic.com</a>
-        </address>
+    </div>
+    <br />
+<br />
+<div class="copyright">
+ 2015 © All Offices of New York
+</div>
       </div>
     </div>
   </div>
 </div>
-
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
