@@ -6662,7 +6662,6 @@ button.close {
   @media (min-width: 468px) {
   .new-booking {
     width: 420px;
-    display: none;
   }
 }
 
