@@ -1593,13 +1593,13 @@ pre code {
     width: 670px;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .container {
     width: 870px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .dign {
     margin-left: 200px;
   }
