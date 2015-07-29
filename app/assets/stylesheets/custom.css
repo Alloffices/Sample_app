@@ -2,9 +2,6 @@
 body {
   padding-top: 50px;
   text-align: center;
-}
-
-*{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -49,7 +46,7 @@ table{
 
 /*#calendar*/
 
-#booking_start_time_1i, #booking_start_time_2i, #booking_start_time_3i, #booking_start_time_5i{
+#booking_start_time_1i, #booking_start_time_2i, #booking_start_time_3i, #booking_start_time_5i {
 
   cursor: pointer;
   border: 0.5px solid 2px;
@@ -131,6 +128,7 @@ General
 /******
 Page Footer 
 ******/
+
 .page-prefooter {
   background: #343b44;
   color: #647183;
