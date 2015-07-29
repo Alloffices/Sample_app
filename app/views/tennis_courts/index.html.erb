@@ -2,84 +2,33 @@
 
 <br />
 
-	<% @tennis_courts.each do |tennis_court| %>
+  <% @tennis_courts.each do |tennis_court| %>
 
 
     <% if current_user.try(:admin?) %>
-<div class="container">
-  <div class="row">
-    <div class=".col-xs-6 .col-md-4">
-  <div class="new-booking">
-    <div class="tennis_court">
-      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class=".col-md-4">
-  <div class="mobile-booking">
-    <div class="tennis_court">
-      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
-    </div>
-  </div>
-</div>
-</div>
-
-
-    <br />
-<br />
-<div class="container">
-  <div class="row">
-    <div class=".col-xs-6 .col-md-4">
-      <div class="note note-info note-bordered">
-  <h4 class="block">Bootstrap Native Modals</h4>
-  <p>
-    Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. If you need more control over the Bootstrap Modals please check out <a href="ui_extended_modals.html">
-              extended modals </a>
-              .
-  </p>
-</div>
-</div>
-</div>
-</div>
-
-
-<br />
-<br />
-
-    <% else %>
-    <div class="new-booking">
-      <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block btn-lg" %>
-      <br />
-      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default" %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br />
-
     <div class="container">
+      <div class=".col-md-4">
+      <div class="new-booking">
+        <div class="tennis_court">
+      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container">
       <div class="row">
       <div class="mobile-booking">
         <div class=".col-xs-6 .col-md-4">
-
-        <%= link_to "New Booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-lg" %>
-
-        <%= link_to "All bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default btn-lg" %>
-
+      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
         </div>
         </div>
       </div>
     </div>
+
 <br />
 <br />
 <div class="container">
-  <div class="row">
-    <div class=".col-xs-6 .col-md-4">
 <div class="note note-info note-bordered">
   <h4 class="block">Bootstrap Native Modals</h4>
   <p>
@@ -89,6 +38,39 @@
   </p>
 </div>
 </div>
+
+    <% else %>
+
+    <div class="new-booking">
+      <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block" %>
+      <br />
+      <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default" %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+      <div class="mobile-booking">
+        <div class=".col-xs-6 .col-md-4">
+        <%= link_to "New Booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-lg" %>
+
+        <%= link_to "All bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default btn-lg" %>
+        </div>
+        </div>
+      </div>
+    </div>
+<br />
+<br />
+<div class="container">
+<div class="note note-info note-bordered">
+  <h4 class="block">Bootstrap Native Modals</h4>
+  <p>
+    Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. If you need more control over the Bootstrap Modals please check out <a href="ui_extended_modals.html">
+              extended modals </a>
+              .
+  </p>
 </div>
 </div>
 
@@ -102,28 +84,11 @@
 
   <!-- link_to "Delete", tennis_court_path(tennis_court), data: { confirm: 'Are you sure?' }, method: :delete %>
  link_to "Edit", edit_tennis_court_path(tennis_court) %> --><br />
-	  </div>
+    </div>
   </div>
-	<% end %>
+  <% end %>
 
-	<!-- this a back linkt to the All tennis courts list -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- this a back linkt to the All tennis courts list -->
 
 
 <% else %>
@@ -208,12 +173,14 @@ make the Nobbble better.</p>
     <button type="submit" class="btn btn-success btn-block">Register Today For Early Access</button>
 </form>
 <% end %>
-<br />
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br />
+<br />
 <div class="copyright">
  2015 © All Offices of New York
 </div>

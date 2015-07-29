@@ -1100,7 +1100,6 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-
 a {
   color: #337ab7;
   text-decoration: none;
@@ -6606,31 +6605,14 @@ button.close {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
+  width: 380px;
   margin-top: 50px;
+  bottom: 20px;
 }
-
-.mobile-booking {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  margin-top: 50px;
-}
-
   @media (max-width: 468px) {
   .new-booking {
     width: 420px;
     display: none;
-  }
-}
-
-@media (max-width: 468px) {
-  .new-booking {
-    width: 100%;
-    position: fixed;
-    bottom: 20px;
   }
 }
 
@@ -6641,7 +6623,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-    width: 100%;
+  width: 270px;
     position: fixed;
     bottom: 20px;
   }
@@ -6660,13 +6642,11 @@ button.close {
 }
 
 /*
-
 @media (min-width: 768px) {
   .bingo {
       width: 750px;
   }
 }
-
 .bingo {
     padding-right: 15px;
     padding-left: 15px;
