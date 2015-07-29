@@ -6606,9 +6606,19 @@ button.close {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  width: 420px;
+  width: 100%;
   margin-top: 50px;
 }
+
+.mobile-booking {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  margin-top: 50px;
+}
+
   @media (max-width: 468px) {
   .new-booking {
     width: 420px;
