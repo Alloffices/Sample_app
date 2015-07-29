@@ -1100,6 +1100,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+
 a {
   color: #337ab7;
   text-decoration: none;
@@ -6606,25 +6607,12 @@ button.close {
   margin-right: auto;
   margin-left: auto;
   width: 420px;
-  margin-top: 50px;}
+  margin-top: 50px;
+}
   @media (max-width: 468px) {
   .new-booking {
-    width: 100%;
-    position: fixed;
-    bottom: 20px;
-  }
-}
-
-.new-booking {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 420px;
-  margin-top: 50px;}
-  @media (min-width: 468px) {
-  .new-booking {
-    width: 100%;
+    width: 420px;
+    display: none;
   }
 }
 
@@ -6635,7 +6623,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-    width: 100%;
+    width: 380px;
     position: fixed;
     bottom: 20px;
   }
