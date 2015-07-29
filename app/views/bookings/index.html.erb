@@ -55,7 +55,7 @@ position:absolute; bottom:0; -->
 
 <!-- admin options acts as votable -->
 
-            <div class="booking-list-edit">
+        <div class="booking-list-edit">
           <% if current_user.try(:admin?) %>
 
             <%= link_to "Request", like_tennis_court_booking_path(@tennis_court, booking), method: :get, class: "btn btn-success btn-block" %>
@@ -72,10 +72,9 @@ position:absolute; bottom:0; -->
 
         </div>
       </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
+</body>
   <% end %>
 
   <% if current_user.try(:admin?) %>
@@ -100,4 +99,3 @@ position:absolute; bottom:0; -->
 
 
 <% end %>
-</body>
