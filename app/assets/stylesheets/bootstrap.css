@@ -1601,7 +1601,7 @@ pre code {
 
 @media (min-width: 900px) {
   .dign {
-    margin-left: 180px;
+    margin-left: 200px;
   }
 }
 
@@ -5323,8 +5323,8 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-ego {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .panel {
