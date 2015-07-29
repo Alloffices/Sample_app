@@ -3,18 +3,15 @@
   <% if current_user.try(:admin?) %>
       <h3>Here will be some text</h3>
   <% else %>
-<div class="container">
   <div class="row">
     <div class="new-booking">
       <div class=".col-xs-6 .col-md-4">
     <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
-</div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </div>
   <% end %>
-</div>
-<div class="container">
   <% if user_signed_in? %>
 
 
@@ -22,8 +19,7 @@
 position:absolute; bottom:0; -->
 
     <% @bookings.each do |booking| %>
-
-  <div id="page-wrapper">
+<div class="container">
     <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -77,7 +73,6 @@ position:absolute; bottom:0; -->
         </div>
       </div>
   </div>
-</div>
 </div>
 </div>
   <% end %>
