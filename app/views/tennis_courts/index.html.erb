@@ -6,15 +6,20 @@
 
 
     <% if current_user.try(:admin?) %>
-    <div class="container">
-      <div class="new-booking">
-        <div class="tennis_court">
+<div class="container">
+  <div class="new-booking">
+    <div class="tennis_court">
       <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
     </div>
+  </div>
+</div>
+
 
     <br />
 <br />
 <div class="container">
+  <div class="row">
+    <div class=".col-md-4">
 <div class="note note-info note-bordered">
   <h4 class="block">Bootstrap Native Modals</h4>
   <p>
@@ -24,10 +29,13 @@
   </p>
 </div>
 </div>
+</div>
+</div>
 
 
 <br />
 <br />
+
     <% else %>
     <div class="new-booking">
       <%= link_to "Add booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-block btn-lg" %>
@@ -37,7 +45,9 @@
         </div>
       </div>
     </div>
+
     <br />
+
     <div class="container">
       <div class="row">
       <div class="mobile-booking">
@@ -77,8 +87,25 @@
 	  </div>
   </div>
 	<% end %>
-        <%= link_to "New Space Booking", new_tennis_court_path, class: "btn btn-default btn-warning"  %>
+
 	<!-- this a back linkt to the All tennis courts list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <% else %>
