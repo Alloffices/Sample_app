@@ -8,7 +8,7 @@
     <% if current_user.try(:admin?) %>
 <div class="container">
   <div class="row">
-    <div class="mobile-booking">
+    <div class="new-booking">
       <div class=".col-xs-6 .col-md-4">
         <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
       </div>
