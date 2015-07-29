@@ -6599,17 +6599,6 @@ button.close {
 
 /*# sourceMappingURL=bootstrap.css.map */
 
-
-.new-booking {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  margin-top: 50px;
-  bottom: 20px;
-}
-
 .mobile-booking {
   padding-right: 15px;
   padding-left: 15px;
@@ -6650,18 +6639,6 @@ button.close {
   .mobile-booking {
     width: 420px;
     display: none;
-  }
-}
-
-
-.new-booking {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;}
-  @media (min-width: 468px) {
-  .new-booking {
-    width: 420px;
   }
 }
 
