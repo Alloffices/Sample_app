@@ -81,14 +81,13 @@ position:absolute; bottom:0; -->
 </div>
   <% end %>
 
-<footer>
   <% if current_user.try(:admin?) %>
   <% elsif current_user %>
   <div class="container">
   <div class="row">
     <div class="mobile-booking">
       <div class=".col-xs-6 .col-md-4">
-        <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-lg btn-block" %>
+        <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
     </div>
   </div>
 </div>
@@ -96,7 +95,6 @@ position:absolute; bottom:0; -->
 
   <% else %>
   <% end %>
-</footer>
 
   <% else %>
 
