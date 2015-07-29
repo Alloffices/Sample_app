@@ -19,9 +19,9 @@
 position:absolute; bottom:0; -->
 
     <% @bookings.each do |booking| %>
+<div class="panel-ego">
   <div id="page-wrapper">
     <div class="col-lg-4">
-      <div class="panel-ego">
       <div class="panel panel-default">
         <div class="panel-heading">
           <% if booking.user == current_user %>
