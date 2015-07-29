@@ -55,7 +55,7 @@ position:absolute; bottom:0; -->
                       <div class="pull-right text-muted small"><%= (booking.calculate_end_time + 60).strftime('%H:%M%p')%>
                       </div>
                 </div>
-          </div>
+      </div>
 
 <!-- admin options acts as votable -->
 
@@ -79,18 +79,19 @@ position:absolute; bottom:0; -->
   </div>
 </div>
 </div>
+</div>
   <% end %>
 
   <% if current_user.try(:admin?) %>
   <% elsif current_user %>
-  <div class="container">
+<div class="container">
   <div class="row">
     <div class="mobile-booking">
       <div class=".col-xs-6 .col-md-4">
         <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
   <% else %>
