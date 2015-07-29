@@ -6653,6 +6653,32 @@ button.close {
   }
 }
 
+
+.new-booking {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;}
+  @media (min-width: 468px) {
+  .new-booking {
+    width: 420px;
+    display: none;
+  }
+}
+
+.new-booking {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;}
+  @media (max-width: 468px) {
+  .new-booking {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+  }
+}
+
 /*
 
 @media (min-width: 768px) {
