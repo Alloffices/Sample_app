@@ -6616,6 +6616,14 @@ button.close {
   }
 }
 
+@media (max-width: 468px) {
+  .new-booking {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+  }
+}
+
 .mobile-booking {
   padding-right: 15px;
   padding-left: 15px;
@@ -6623,7 +6631,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-    width: 380px;
+    width: 100%;
     position: fixed;
     bottom: 20px;
   }
