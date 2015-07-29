@@ -3,8 +3,14 @@
   <% if current_user.try(:admin?) %>
       <h3>Here will be some text</h3>
   <% else %>
-<div class="new-booking">
-    <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
+<div class="container">
+  <div class="row">
+    <div class="mobile-booking">
+      <div class=".col-xs-6 .col-md-4">
+        <%= link_to "New Booking", new_tennis_court_booking_path, class: "btn btn-success btn-block" %>
+      </div>
+    </div>
+  </div>
 </div>
   <% end %>
 </div>
