@@ -6623,7 +6623,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-  width: 270px;
+  width: 100%;
     position: fixed;
     bottom: 20px;
   }
