@@ -6605,7 +6605,7 @@ button.close {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  width: 420px;
+    width: 380px;
   margin-top: 50px;
 }
   @media (max-width: 468px) {
@@ -6622,7 +6622,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-    width: 380px;
+    width: 450px;
     position: fixed;
     bottom: 20px;
   }
