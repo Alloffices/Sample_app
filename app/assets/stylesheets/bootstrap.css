@@ -6606,13 +6606,12 @@ button.close {
   margin-right: auto;
   margin-left: auto;
   width: 420px;
-  margin-top: 50px;
-}
-
+  margin-top: 50px;}
   @media (max-width: 468px) {
   .new-booking {
-    width: 420px;
-    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
   }
 }
 
@@ -6623,7 +6622,7 @@ button.close {
   margin-left: auto;}
   @media (max-width: 468px) {
   .mobile-booking {
-    width: 380px;
+    width: 100%;
     position: fixed;
     bottom: 20px;
   }
