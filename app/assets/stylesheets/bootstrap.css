@@ -6615,6 +6615,19 @@ button.close {
   }
 }
 
+.new-booking {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 420px;
+  margin-top: 50px;}
+  @media (min-width: 468px) {
+  .new-booking {
+    width: 100%;
+  }
+}
+
 .mobile-booking {
   padding-right: 15px;
   padding-left: 15px;
