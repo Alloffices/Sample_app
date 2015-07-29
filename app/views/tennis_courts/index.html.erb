@@ -18,9 +18,11 @@
 
   <div class="container">
       <div class="row">
+        <div class=".col-md-4">
       <div class="mobile-booking">
         <div class=".col-xs-6 .col-md-4">
       <%= link_to "Show all bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-info btn-block"  %>
+        </div>
         </div>
         </div>
       </div>
@@ -54,6 +56,7 @@
       <div class="row">
       <div class="mobile-booking">
         <div class=".col-xs-6 .col-md-4">
+
         <%= link_to "New Booking", new_tennis_court_booking_path(tennis_court), class: "btn btn-success btn-lg" %>
 
         <%= link_to "All bookings", tennis_court_bookings_path(tennis_court), class: "btn btn-default btn-lg" %>
