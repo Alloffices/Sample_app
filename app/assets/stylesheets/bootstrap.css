@@ -1600,6 +1600,12 @@ pre code {
 }
 
 @media (min-width: 900px) {
+  .dign {
+    margin-left: 400px;
+  }
+}
+
+@media (min-width: 900px) {
   .edit-container {
     width: 100%;
   }
