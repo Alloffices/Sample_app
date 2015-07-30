@@ -6,13 +6,11 @@ Rails.application.routes.draw do
 
   devise_for :admins
 
+  resources :posts
 
   get 'profile/index'
-
   get 'profile/show'
-
   root 'tennis_courts#index'
-
   get 'sessions/new'
 
   get    'login'   => 'sessions#new'

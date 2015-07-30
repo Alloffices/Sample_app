@@ -1,0 +1,25 @@
+<br />
+<br />
+<br />
+<br />
+<p>Index Post Page</p>
+<%= link_to "New Post", new_post_path %>
+<br />
+<% @posts.each do |post| %>
+<br />
+<p>
+	<strong>Title:</strong>
+	<br />
+	<%= post.title %>
+</p>
+<p>
+	<%= link_to "Delete", post, method: :delete, data: { confirm: "Are you sure you want to delete?" }%>
+	<%= link_to "Edit", edit_post_path(post) %>
+</p>
+<p>
+	<strong>Content:</strong>
+	<br />
+	<%= post.content %>
+</p>
+
+<% end %>
